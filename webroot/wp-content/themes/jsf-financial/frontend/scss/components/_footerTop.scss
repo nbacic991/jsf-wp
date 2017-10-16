@@ -1,0 +1,19 @@
+.footer-top {
+  .featured {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    img {
+      border-radius: 50%;
+    }
+    a {
+      text-transform: uppercase;
+      color: #929497;
+      cursor: pointer;
+      &:hover {
+        color: #336497;
+      }
+    }
+  }
+}
