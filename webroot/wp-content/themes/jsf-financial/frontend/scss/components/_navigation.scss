@@ -1,0 +1,41 @@
+html, body {
+  margin: auto 0;
+  padding: 0;
+  .site {
+    .skip-link {
+      display: none;
+    }
+    .site-branding {
+      img {
+        width: 200px;
+        height: 50px;
+      }
+    }
+    .main-navigation {
+      .nav-menu {
+        display: none;
+        list-style-type: none;
+        text-transform: uppercase;
+        padding: 0 20px;
+        a {
+          text-decoration: none;
+          color: #929497;
+          &:hover {
+            color: #336497;
+          }
+        }
+        li {
+          list-style-type: none;
+          ul {
+          }
+        }
+      }
+    }
+    .open {
+      .nav-menu {
+        display: block;
+      }
+    }
+
+  }
+}
