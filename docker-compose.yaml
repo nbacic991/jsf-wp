@@ -1,0 +1,67 @@
+version: "2"
+
+services:
+  mariadb:
+    image: wodby/mariadb:10.1-2.3.3
+    environment:
+      MYSQL_ROOT_PASSWORD: wordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    volumes:
+      - ./runtime/mariadb:/var/lib/mysql
+      - ./databases:/var/lib/mysql/databases
+
+  php:
+    image: wodby/wordpress:4-7.1-2.2.0
+    environment:
+      PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
+      PHP_XDEBUG: 1
+      PHP_XDEBUG_DEFAULT_ENABLE: 1
+      PHP_XDEBUG_REMOTE_CONNECT_BACK: 0         # This is needed to respect remote.host setting bellow
+    volumes:
+      - ./webroot:/var/www/html
+    networks:
+      - default
+      - traefik_proxy
+
+  nginx:
+    image: wodby/wordpress-nginx:4-1.13-2.2.0
+    environment:
+      NGINX_STATIC_CONTENT_OPEN_FILE_CACHE: "off"
+      NGINX_ERROR_LOG_LEVEL: debug
+      NGINX_BACKEND_HOST: php
+      NGINX_SERVER_ROOT: /var/www/html
+    networks:
+      - default
+      - traefik_proxy
+    volumes:
+      - ./webroot:/var/www/html
+    depends_on:
+      - php
+    labels:
+      - 'traefik.backend=jsf_nginx_1'
+      - 'traefik.port=80'
+      - 'traefik.frontend.rule=Host:dev.jsf.loc'
+      - "traefik.docker.network=traefik_proxy"
+
+  pma:
+   image: phpmyadmin/phpmyadmin
+   environment:
+     PMA_HOST: mariadb
+     PMA_USER: root
+     PMA_PASSWORD: wordpress
+     PHP_UPLOAD_MAX_FILESIZE: 1G
+     PHP_MAX_INPUT_VARS: 1G
+   networks:
+     - default
+     - traefik_proxy
+   labels:
+     - 'traefik.backend=jsf_pma_1'
+     - 'traefik.port=80'
+     - 'traefik.frontend.rule=Host:pma.jsf.loc'
+     - "traefik.docker.network=traefik_proxy"
+
+networks:
+  traefik_proxy:
+    external: true
