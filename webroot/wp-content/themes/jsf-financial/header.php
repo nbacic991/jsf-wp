@@ -53,4 +53,23 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
+    <div class="flex-container">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="http://via.placeholder.com/920x350" alt="1st slide">
+                    <p class="flex-caption">Some texteeeeeeeeeeeeeeeee</p>
+                </li>
+                <li>
+                    <img src="http://via.placeholder.com/920x350" alt="1st slide">
+                    <p class="flex-caption">Some texteeee</p>
+                </li>
+                <li>
+                    <img src="http://via.placeholder.com/920x350" alt="1st slide">
+                    <p class="flex-caption">Some textsadsdadas</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 	<div id="content" class="site-content">
