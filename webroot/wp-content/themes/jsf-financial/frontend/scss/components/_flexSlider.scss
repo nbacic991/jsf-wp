@@ -1,0 +1,47 @@
+.flex-container {
+  position: relative;
+  .flex-control-nav {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+  }
+}
+
+.slides {
+  li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .flex-caption {
+      flex-basis: 30%;
+      width: 30%;
+      position: absolute;
+      top: 10px;
+      left: 10%;
+      font-size: 50px;
+      text-transform: uppercase;
+      color: #FFF;
+      p {
+        margin-bottom: 0;
+      }
+      button {
+        background-color: #DEEAD6;
+        color: #336497;
+        border: none;
+        padding: 10px 25px;
+      }
+    }
+    .flex-image {
+      flex-basis: 50%;
+      position: absolute;
+      top: 25%;
+      right: 10%;
+      color: red;
+      border: 3px solid black;
+      border-radius: 50%;
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+}
