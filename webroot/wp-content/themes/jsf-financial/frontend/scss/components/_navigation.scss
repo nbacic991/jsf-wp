@@ -2,40 +2,67 @@ html, body {
   margin: auto 0;
   padding: 0;
   .site {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
     .skip-link {
       display: none;
     }
-    .site-branding {
-      img {
-        width: 200px;
-        height: 50px;
-      }
-    }
-    .main-navigation {
-      .nav-menu {
-        display: none;
-        list-style-type: none;
-        text-transform: uppercase;
-        padding: 0 20px;
-        a {
-          text-decoration: none;
-          color: #929497;
-          &:hover {
-            color: #336497;
-          }
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-bottom: 2px solid black;
+      margin-top: 10px;
+      .site-branding {
+        flex-basis: 60%;
+        img {
+          width: 200px;
+          height: 50px;
         }
-        li {
+      }
+      .main-navigation {
+        flex-basis: 30%;
+        margin-top: 10px;
+        button {
+          display: block;
+          margin: 0 auto;
+        }
+        .nav-menu {
+          display: none;
           list-style-type: none;
-          ul {
+          text-transform: uppercase;
+          padding: 0 20px;
+          text-align: center;
+          a {
+            text-decoration: none;
+            color: #929497;
+            padding: 0;
+            margin:  0;
+            &:hover {
+              color: #336497;
+            }
+          }
+          li {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            ul {
+              display: none;
+            }
+          }
+        }
+      }
+      .open {
+        .nav-menu {
+          display: block;
+          li {
+            ul {
+              display: none;
+            }
           }
         }
       }
     }
-    .open {
-      .nav-menu {
-        display: block;
-      }
-    }
-
   }
 }
