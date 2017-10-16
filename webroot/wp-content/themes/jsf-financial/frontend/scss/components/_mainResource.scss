@@ -1,0 +1,27 @@
+.resource-center-highlights {
+  .title {
+    p, a {
+      text-transform: uppercase;
+      text-decoration: none;
+      margin: 0;
+      display: inline-block;
+    }
+    a {
+      float: right;
+    }
+  }
+  .center-highlight {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    p {
+      color: #333333;
+    }
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #7FADD3;
+    }
+  }
+}
