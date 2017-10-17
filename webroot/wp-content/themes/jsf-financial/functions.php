@@ -173,8 +173,20 @@ function my_add_scripts() {
 add_action('wp_enqueue_scripts', 'my_add_scripts');
 
 /**
- * Adding custom secondary menu
+ * Adding custom menus
  */
+
+add_action( 'init', 'my_custom_menus' );
+function my_custom_menus() {
+    register_nav_menus(
+        array(
+            'footer-1' => __( 'Footer Questions' ),
+            'footer-2' => __( 'Footer About Us' ),
+            'footer-3' => __( 'Footer Services' ),
+            'footer-4' => __( 'Footer Resource' )
+        )
+    );
+}
 
 function wpb_custom_new_menu() {
     register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
