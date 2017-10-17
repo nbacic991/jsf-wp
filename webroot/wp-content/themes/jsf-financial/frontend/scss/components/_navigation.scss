@@ -33,7 +33,9 @@ html, body {
         }
         .menu-item-32 {
           &::before {
-            content: '>';
+            font-family: 'ElegantIcons';
+            content: '\45';
+            color: #929497;
           }
         }
         .menu {
