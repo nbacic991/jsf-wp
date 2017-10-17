@@ -1,5 +1,6 @@
 <?php /* Template Name: Front Page */ ?>
 <?php get_header(); ?>
+<?php include 'flex-slider.php';?>
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
