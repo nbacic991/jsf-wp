@@ -3,7 +3,20 @@
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
-
+            <section class="main-content">
+                <div class="main-content-left">
+                    <img src="http://via.placeholder.com/180x220" alt="">
+                    <a class="link" href="#">Our investment philosophy</a>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    <a class="learn" href="#">Learn more</a>
+                </div>
+                <div class="main-content-right">
+                    <img src="http://via.placeholder.com/180x220" alt="">
+                    <a class="link" href="#">Why holistic financial planning ?</a>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    <a class="read" href="#">Read more</a>
+                </div>
+            </section>
             <section class="resource-center-highlights">
                 <div class="title">
                     <p>Resource center highlights</p>
