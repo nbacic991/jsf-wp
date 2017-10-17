@@ -31,7 +31,14 @@ html, body {
           display: block;
           margin: 0 auto;
         }
-        .nav-menu {
+        .menu-item-32 {
+          &::before {
+            font-family: 'ElegantIcons';
+            content: '\45';
+            color: #929497;
+          }
+        }
+        .menu {
           display: none;
           list-style-type: none;
           text-transform: uppercase;
@@ -57,7 +64,7 @@ html, body {
         }
       }
       .open {
-        .nav-menu {
+        .menu {
           display: block;
           li {
             ul {

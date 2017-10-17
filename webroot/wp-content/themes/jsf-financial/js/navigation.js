@@ -27,8 +27,8 @@
 	}
 
 	menu.setAttribute( 'aria-expanded', 'false' );
-	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
-		menu.className += ' nav-menu';
+	if ( -1 === menu.className.indexOf( 'menu' ) ) {
+		menu.className += 'menu';
 	}
 
 	button.onclick = function() {

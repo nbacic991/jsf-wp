@@ -171,3 +171,12 @@ function my_add_scripts() {
     wp_enqueue_script('flexslider-init', get_stylesheet_directory_uri().'/js/flexslider-init.js', array('jquery', 'flexslider'));
 }
 add_action('wp_enqueue_scripts', 'my_add_scripts');
+
+/**
+ * Adding custom secondary menu
+ */
+
+function wpb_custom_new_menu() {
+    register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
+}
+add_action( 'init', 'wpb_custom_new_menu' );
