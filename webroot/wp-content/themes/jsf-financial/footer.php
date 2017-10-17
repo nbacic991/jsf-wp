@@ -27,7 +27,8 @@
         <?php wp_nav_menu (array('theme_location' => 'footer-4','menu_class' => 'nav'));?>
 
 		<div class="site-info">
-
+            <img src="http://via.placeholder.com/300x100" alt="footer logo" />
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
