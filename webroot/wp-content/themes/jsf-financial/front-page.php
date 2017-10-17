@@ -3,6 +3,7 @@
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
+
             <section class="resource-center-highlights">
                 <div class="title">
                     <p>Resource center highlights</p>
@@ -22,6 +23,14 @@
                     <img src="http://via.placeholder.com/360x240" alt="">
                     <p>Financial planners in Los Angeles</p>
                     <a href="#">Read more</a>
+                </div>
+            </section>
+            <section class="hero-bottom">
+                <div class="hero-bottom-caption">
+                    <h1>Will a weak dollar lead to a stronger nation ?</h1>
+                    <p class="date">8/17/2017</p>
+                    <p class="caption">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    <button>Read more</button>
                 </div>
             </section>
             <section class="footer-top">

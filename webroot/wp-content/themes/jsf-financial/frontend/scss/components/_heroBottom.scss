@@ -1,0 +1,56 @@
+.hero-bottom {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    z-index: -1;
+    background: url("img/superman.jpg") no-repeat;
+    background-size: cover;
+  }
+  .hero-bottom-caption {
+    padding: 10px;
+    h1,
+    button {
+      text-transform: uppercase;
+    }
+    h1 {
+      font-family: Brandon Grotesque;
+      font-weight: bold;
+      font-size: 16px;
+      color: #336497;
+      margin-bottom: 0;
+    }
+    .date {
+      font-family: Brandon Grotesque;
+      font-weight: bold;
+      font-size: 12px;
+    }
+    .caption {
+      font-family: Merriweather;
+      font-size: 12px;
+    }
+    button {
+      font-family: Brandon Grotesque;
+      font-weight: bold;
+      background-color: #74C1D6;
+      color: #336497;
+      border: none;
+      width: 150px;
+      height: 50px;
+      &::after {
+        font-family: ElegantIcons;
+        content:'\45';
+      }
+    }
+  }
+}
