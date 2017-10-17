@@ -1,0 +1,42 @@
+.main-content {
+  margin-bottom: 20px;
+  padding: 0 5px;
+  img {
+    width: 100%;
+  }
+  h1,
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .link {
+    display: block;
+    font-family: Brandon Grotesque;
+    font-weight: bold;
+    font-size: 28px;
+    color: #346397;
+  }
+  p {
+    font-family: Merriweather;
+    font-size: 16px;
+  }
+  .read,
+  .learn {
+    font-family: Brandon Grotesque;
+    font-weight: bold;
+    font-size: 14px;
+    color: #7FADD3;
+    &::after {
+      font-family: ElegantIcons;
+      content: '\45';
+    }
+  }
+  .main-content-left {
+    flex-basis: 40%;
+    width: 100%;
+  }
+  .main-content-right {
+    flex-basis: 40%;
+    width: 100%;
+  }
+}
