@@ -31,7 +31,12 @@ html, body {
           display: block;
           margin: 0 auto;
         }
-        .nav-menu {
+        .menu-item-32 {
+          &::before {
+            content: '>';
+          }
+        }
+        .menu {
           display: none;
           list-style-type: none;
           text-transform: uppercase;
@@ -57,7 +62,7 @@ html, body {
         }
       }
       .open {
-        .nav-menu {
+        .menu {
           display: block;
           li {
             ul {
