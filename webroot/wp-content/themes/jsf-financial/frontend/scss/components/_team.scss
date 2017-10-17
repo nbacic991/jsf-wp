@@ -1,3 +1,46 @@
+.team-hero {
+  margin-bottom: 20px;
+  background-color: #346397;
+  padding: 20px 5px;
+  text-align: center;
+  .team-hero-left {
+    color: #FFF;
+    h1 {
+      &::after {
+        display: block;
+        content:'';
+        margin: 10px auto;
+        width: 100px;
+        border-bottom: 5px solid #C2D8B4;
+      }
+    }
+    p {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        top: 360px;
+        left: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-top: 40px solid #346397;
+      }
+    }
+  }
+  .team-hero-right {
+    img {
+      display: block;
+      margin: auto;
+      border-radius: 50%;
+      border: 2px solid lightgray;
+      padding: 3px;
+      &:hover {
+        border-color: #000000;
+      }
+    }
+  }
+}
+
 .team-members {
   .gray-box {
     background-color: lightgray;
@@ -9,7 +52,6 @@
       color: #346397;
       text-transform: uppercase;
       text-align: center;
-      //font-size: ;
     }
     p {
       font-family: Merriweather;
@@ -19,8 +61,8 @@
         content: '';
         top: 140px;
         left: 0;
-        border-left: 80px solid transparent;
-        border-right: 80px solid transparent;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
         border-top: 40px solid lightgray;
       }
     }

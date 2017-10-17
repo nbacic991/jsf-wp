@@ -1,5 +1,7 @@
 <?php /* Template Name: Team Page */ ?>
 <?php include 'header.php'?>
+<?php include 'team-hero.php'?>
+
 <section class="team-members">
     <div class="team-founders">
         <div class="team-member">
