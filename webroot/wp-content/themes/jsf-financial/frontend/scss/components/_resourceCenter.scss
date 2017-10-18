@@ -1,7 +1,52 @@
 .resource-content {
   .hero {
-    img {
+    position: relative;
+    z-index: 1;
+    max-width: 1180px;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
+      height: 100%;
+      opacity: .8;
+      z-index: -1;
+      background: url("img/iStock_000004319094XLarge.jpg") no-repeat;
+      background-size: cover;
+    }
+    .hero-caption {
+      text-align: center;
+      padding-top: 30px;
+      h1 {
+        color: #FFF;
+      }
+      .by {
+        text-transform: uppercase;
+        color: #FFF;
+        .author {
+
+        }
+      }
+      .caption-text {
+        font-family: Merriweather;
+        font-weight: bold;
+        color: #FFF;
+      }
+      a {
+        text-decoration: none;
+        background-color: #DEEAD6;
+        color: #336497;
+        padding: 10px 15px;
+        &::after {
+          font-family: ElegantIcons;
+          display: inline-block;
+          content: '\45';
+        }
+      }
     }
   }
   .top {
@@ -234,6 +279,10 @@
       }
       .images {
         margin-bottom: 20px;
+        .short-desc {
+          font-family: Merriweather;
+          color: #999999;
+        }
         .image-title {
           font-family: Merriweather;
           font-size: 18px;
