@@ -2,6 +2,9 @@
 <?php include 'header.php'?>
 
 <section class="resource-content">
+    <div class="hero">
+        <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/tough-growth.jpg" alt="Resource hero image">
+    </div>
     <div class="top">
         <div class="content">
             <h1>Los Angeles county in smallest short-term issue since '08</h1>
@@ -67,7 +70,20 @@
                 </ul>
             </div>
             <div class="tag-cloud">
-
+                <h1>Tag cloud</h1>
+                <ul>
+                    <li>Financial</li>
+                    <li>Investors</li>
+                    <li>Capital</li>
+                    <li>Planning</li>
+                    <li>Real-estate</li>
+                    <li>News</li>
+                    <li>Import</li>
+                    <li>United states</li>
+                    <li>Stock</li>
+                    <li>Personal advisors</li>
+                    <li>Foreign markets</li>
+                </ul>
             </div>
         </aside>
     </div>
