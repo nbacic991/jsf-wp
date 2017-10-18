@@ -1,4 +1,9 @@
 .resource-content {
+  .hero {
+    img {
+      width: 100%;
+    }
+  }
   .top {
     padding: 10px;
     .content {
@@ -95,6 +100,7 @@
             }
           }
           img {
+            border-radius: 50%;
             max-width: 50px;
             width: 100%;
             max-height: 50px;
@@ -117,7 +123,7 @@
           margin-top: 20px;
           max-width: 360px;
           width: 100%;
-          background-color: lightgray;
+          background-color: #f2f2f2;
           padding: 10px;
           .about {
             font-family: Brandon Grotesque;
@@ -135,44 +141,66 @@
           }
         }
       }
-      ul {
-        font-family: Brandon Grotesque;
-        font-weight: bold;
-        font-size: 18px;
-        color: #7FADD3;
-        text-transform: uppercase;
-        list-style-type: none;
-        padding: 0;
-        li:nth-child(1) {
-          margin-top: 30px;
-        }
-        li {
-          position: relative;
+      .categories,
+      .archives {
+        ul {
           font-family: Brandon Grotesque;
           font-weight: bold;
-          font-size: 16px;
-          color: #929497;
-          cursor: pointer;
-          border-bottom: 2px solid #999999;
-          padding-bottom: 10px;
-          margin-bottom: 10px;
-          &:hover {
-            color: #336497;
+          font-size: 18px;
+          color: #7FADD3;
+          text-transform: uppercase;
+          list-style-type: none;
+          padding: 0;
+          li:nth-child(1) {
+            margin-top: 30px;
           }
-          &:after {
-            position: absolute;
-            right: 0;
-            font-family: ElegantIcons;
-            display: inline-block;
-            content: "\35";
+          li {
+            position: relative;
+            font-family: Brandon Grotesque;
+            font-weight: bold;
+            font-size: 16px;
+            color: #929497;
+            cursor: pointer;
+            border-bottom: 2px solid #999999;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            &:hover {
+              color: #336497;
+            }
+            &:after {
+              position: absolute;
+              right: 0;
+              font-family: ElegantIcons;
+              display: inline-block;
+              content: "\35";
+            }
           }
         }
       }
-      .categories {
-
-      }
-      .archives {
-
+      .tag-cloud {
+        h1 {
+          font-family: Brandon Grotesque;
+          font-weight: bold;
+          font-size: 18px;
+          text-transform: uppercase;
+          color: #7FADD3;
+        }
+        ul {
+          padding: 0;
+          li {
+            text-transform: uppercase;
+            list-style-type: none;
+            border: 2px solid #DDDDDD;
+            color: #999999;
+            padding: 5px 10px;
+            display: inline-block;
+            margin: 5px;
+            &:hover {
+              cursor: pointer;
+              border-color: #346397;
+            }
+          }
+        }
       }
     }
   }
