@@ -19,7 +19,7 @@
       &::after {
         position: absolute;
         content: '';
-        top: 360px;
+        top: 340px;
         left: 0;
         border-left: 40px solid transparent;
         border-right: 40px solid transparent;
@@ -86,6 +86,65 @@
     p {
       font-family: Merriweather;
       font-style: italic;
+    }
+  }
+}
+
+/**
+ * Single Team Page
+ */
+
+.team-member {
+  .highlighted {
+    text-transform: uppercase;
+    background-color: lightgray;
+    color: #666666;
+    text-align: center;
+  }
+  .member-photo {
+    img {
+      display: block;
+      margin: auto;
+      width: 400px;
+      height: 500px;
+    }
+  }
+  .member-info {
+    padding: 10px;
+    h1 {
+      font-family: Brandon Grotesque;
+      font-size: 18px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #336497;
+    }
+    .title,
+    .info {
+      color: #666666;
+      font-family: Merriweather;
+      font-style: italic;
+    }
+    .info {
+      text-align: justify;
+    }
+    .title {
+      &:after {
+        margin: 10px auto;
+        display: block;
+        content: '';
+        border-bottom: 5px solid #666666;
+        width: 150px;
+      }
+    }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #666666;
+      &::before {
+        display: inline-block;
+        font-family: ElegantIcons;
+        content: '\44';
+      }
     }
   }
 }
