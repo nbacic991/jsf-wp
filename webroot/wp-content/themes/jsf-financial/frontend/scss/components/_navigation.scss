@@ -49,7 +49,9 @@
         }
       }
     }
-    .menu-item-32 {
+    .menu-item-32,
+    .menu-item-12,
+    .menu-item-16 {
       &::before {
         font-family: 'ElegantIcons';
         content: '\45';
