@@ -2,8 +2,7 @@
 <?php include 'header.php'?>
 
 <section class="resource-content">
-    <div class="hero">
-        <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/tough-growth.jpg" alt="Resource hero image">
+    <div class="hero-res">
     </div>
     <div class="top">
         <div class="content">
