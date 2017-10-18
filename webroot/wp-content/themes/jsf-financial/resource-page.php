@@ -30,23 +30,23 @@
 
             </div>
             <div class="categories">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul>Categories
+                    <li>Charitable giving</li>
+                    <li>Culture</li>
+                    <li>Estate planning</li>
+                    <li>Financial advisors</li>
+                    <li>Investing</li>
+                    <li>Other</li>
+                    <li>Worth sharing</li>
                 </ul>
             </div>
             <div class="archives">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul>Archives
+                    <li>March 2017</li>
+                    <li>January 2017</li>
+                    <li>December 2016</li>
+                    <li>November 2016</li>
+                    <li>September 2016</li>
                 </ul>
             </div>
             <div class="tag-cloud">
