@@ -13,7 +13,7 @@
                 Nulla leo elit, bibendum nec erat ac, volutpat mattis quam. Proin placerat, lacus sed semper hendrerit, massa justo varius augue, ut sagittis felis dolor scelerisque nunc. Donec tristique consectetur imperdiet. Nam vulputate augue in nunc aliquam, sit amet euismod enim consequat. Pellentesque imperdiet condimentum varius. Aenean id justo in neque mollis vestibulum. Donec tempor, dui ac venenatis sodales, ante felis lacinia ante, at efficitur elit sapien viverra eros. Fusce tempus eros non libero euismod, quis mattis quam posuere. Curabitur id luctus eros. Praesent euismod porta risus, vitae semper enim luctus ac. Nullam nec risus a ante fringilla placerat vel quis diam. In ut placerat dolor. Vestibulum purus sem, commodo non fringilla sit amet, efficitur sit amet nibh. Mauris sit amet fringilla mi, sit amet congue odio. Integer sed varius ex, id tincidunt nisl.
                 Nam molestie ex id massa hendrerit gravida. Duis eu fringilla nisl, vel elementum augue. Praesent tortor lorem, malesuada sit amet posuere at, egestas vitae enim. Duis lacinia lorem mattis, maximus neque sit amet, feugiat lacus. Donec finibus a lectus eu tincidunt. Phasellus sed neque posuere, egestas nulla nec, facilisis ipsum. Duis vitae nulla enim. Vestibulum a ornare diam. Cras auctor lectus dolor, id rhoncus dolor cursus et. In ullamcorper pretium rhoncus. Cras lobortis risus ex, eget dapibus est egestas vel. Sed congue, lacus tempor finibus tempus, elit dui volutpat mauris, at mollis orci elit non urna. Suspendisse et enim quam. Quisque ultrices metus ac consectetur luctus. Etiam id massa dignissim, tristique lorem et, posuere justo. Phasellus feugiat scelerisque dolor ac finibus.
             </p>
-            <img src="http://via.placeholder.com/770x513"" alt="resource image">
+            <img src="http://via.placeholder.com/770x513" alt="resource image">
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
             <p class="description">
                 Nam molestie ex id massa hendrerit gravida. Duis eu fringilla nisl, vel elementum augue. Praesent
@@ -27,7 +27,24 @@
         </div>
         <aside>
             <div class="about-author">
-
+                <div class="short-info">
+                    <p class="post-date">23 <span>November</span></p>
+                    <img src="http://via.placeholder.com/50x50" alt="">
+                </div>
+                <div class="author-social">
+                    <img src="http://via.placeholder.com/50x50" alt="facebook">
+                    <img src="http://via.placeholder.com/50x50" alt="twitter">
+                    <img src="http://via.placeholder.com/50x50" alt="linkedin">
+                    <img src="http://via.placeholder.com/50x50" alt="pinterest">
+                    <img src="http://via.placeholder.com/50x50" alt="google plus">
+                </div>
+                <div class="author-info">
+                    <p class="about">About the author</p>
+                    <p class="name">Sam Sekine</p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed
+                        porta porttitor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed
+                        porta porttitor.</p>
+                </div>
             </div>
             <div class="categories">
                 <ul>Categories
@@ -55,7 +72,30 @@
         </aside>
     </div>
     <div class="bottom">
-
+        <div class="title">
+            <h1>What's trending</h1>
+            <a href="#">View all</a>
+        </div>
+        <div class="trending">
+            <div class="images">
+                <img src="http://via.placeholder.com/360x250" alt="">
+                <p class="image-title">JSF wealth managers overview</p>
+                <p class="trending-date">23 <span>November</span></p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="images">
+                <img src="http://via.placeholder.com/360x250" alt="">
+                <p class="image-title">JSF wealth managers overview</p>
+                <p class="trending-date">23 <span>November</span></p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="images">
+                <img src="http://via.placeholder.com/360x250" alt="">
+                <p class="image-title">JSF wealth managers overview</p>
+                <p class="trending-date">23 <span>November</span></p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
     </div>
 </section>
 

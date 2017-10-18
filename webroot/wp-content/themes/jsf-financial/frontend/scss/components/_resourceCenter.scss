@@ -69,9 +69,72 @@
       }
     }
     aside {
+      padding-top: 20px;
       max-width: 360px;
       width: 100%;
       margin: auto;
+      .about-author {
+        .short-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .post-date {
+            margin: 0;
+            text-align: left;
+            font-family: Brandon Grotesque;
+            font-weight: bold;
+            color: #7FADD3;
+            font-size: 30px;
+            border-right: 2px solid #666666;
+            padding-right: 5px;
+            span {
+              text-transform: uppercase;
+              color: #999999;
+              font-size: 16px;
+              display: block;
+            }
+          }
+          img {
+            max-width: 50px;
+            width: 100%;
+            max-height: 50px;
+            height: 100%;
+          }
+        }
+        .author-social {
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          img {
+            max-width: 30px;
+            width: 100%;
+            max-height: 30px;
+            height: 100%;
+          }
+        }
+        .author-info {
+          margin-top: 20px;
+          max-width: 360px;
+          width: 100%;
+          background-color: lightgray;
+          padding: 10px;
+          .about {
+            font-family: Brandon Grotesque;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+          .name {
+            font-family: Brandon Grotesque;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #346397;
+          }
+          .desc {
+            font-family: Merriweather;
+          }
+        }
+      }
       ul {
         font-family: Brandon Grotesque;
         font-weight: bold;
@@ -80,6 +143,9 @@
         text-transform: uppercase;
         list-style-type: none;
         padding: 0;
+        li:nth-child(1) {
+          margin-top: 30px;
+        }
         li {
           position: relative;
           font-family: Brandon Grotesque;
@@ -107,6 +173,72 @@
       }
       .archives {
 
+      }
+    }
+  }
+  .bottom {
+    padding: 10px;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      h1,a {
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 0;
+        display: inline-block;
+        color: #7FADD3;
+      }
+      h1 {
+        font-family: Brandon Grotesque;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      a {
+        float: right;
+      }
+    }
+    .trending {
+      text-align: center;
+      img {
+        max-width: 360px;
+        width: 100%;
+      }
+      .images {
+        margin-bottom: 20px;
+        .image-title {
+          font-family: Merriweather;
+          font-size: 18px;
+        }
+        .trending-date {
+          margin: 0 auto 20px auto;
+          padding-right: 10px;
+          text-align: right;
+          font-family: Brandon Grotesque;
+          font-weight: bold;
+          color: #7FADD3;
+          font-size: 30px;
+          border-right: 2px solid #666666;
+          width: 100px;
+          span {
+            text-transform: uppercase;
+            color: #999999;
+            font-size: 16px;
+            display: block;
+          }
+        }
+        a {
+          font-family: Brandon Grotesque;
+          font-weight: bold;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #7FADD3;
+          &:after {
+            font-family: ElegantIcons;
+            display: inline-block;
+            content: '\45';
+          }
+        }
       }
     }
   }
