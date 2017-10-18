@@ -1,0 +1,71 @@
+.resource-content {
+  .top {
+    padding: 10px;
+    .content {
+      h1 {
+        font-family: Brandon Grotesque;
+        font-weight: bold;
+        font-size: 48px;
+        text-transform: uppercase;
+        color: #336497;
+      }
+      .authored-by {
+        font-family: Brandon Grotesque;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        span {
+          color: #7FADD3;
+        }
+      }
+      .description {
+        font-family: Merriweather;
+        font-size: 16px;
+        color: #666666;
+      }
+      img {
+        width: 100%;
+      }
+      h3 {
+        font-family: Brandon Grotesque;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        color: #999999;
+      }
+      .pager {
+        border-top: 2px solid #999999;
+        border-bottom: 2px solid #999999;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        font-family: Brandon Grotesque;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px 0;
+        .next {
+          &::after {
+            font-family: ElegantIcons;
+            display: inline-block;
+            content: '\24';
+          }
+        }
+        .prev {
+          &::before {
+            font-family: ElegantIcons;
+            display: inline-block;
+            content: '\23';
+          }
+        }
+        a {
+          text-decoration: none;
+          color: #999999;
+          &:hover {
+            color: #336497;
+          }
+        }
+      }
+    }
+  }
+}
