@@ -5,7 +5,6 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
-
   .main-content {
     display: flex;
     justify-content: space-around;
@@ -224,6 +223,26 @@
           float: left;
         }
       }
+    }
+  }
+
+  // Single Team Member
+  .single-team-member {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .highlighted {
+      flex-basis: 100%;
+    }
+    .member-photo {
+      position: absolute;
+      right: 10px;
+      order: 2;
+      flex-basis: 30%;
+    }
+    .member-info {
+      flex-basis: 50%;
     }
   }
 

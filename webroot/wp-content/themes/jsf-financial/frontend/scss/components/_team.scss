@@ -99,19 +99,23 @@
  * Single Team Page
  */
 
-.team-member {
+.single-team-member {
   .highlighted {
     text-transform: uppercase;
     background-color: lightgray;
     color: #666666;
-    text-align: center;
+    text-align: left;
+    h1 {
+      padding: 20px 0 20px 10px;
+    }
   }
   .member-photo {
     img {
       display: block;
       margin: auto;
-      width: 400px;
-      height: 500px;
+      max-width: 400px;
+      max-height: 500px;
+      width: 100%;
     }
   }
   .member-info {
@@ -128,12 +132,9 @@
       color: #666666;
       font-family: Merriweather;
       font-style: italic;
-      text-align: center;
-    }
-    .info {
-      text-align: justify;
     }
     .title {
+      text-align: center;
       &:after {
         margin: 10px auto;
         display: block;
