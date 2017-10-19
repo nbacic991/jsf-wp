@@ -1,0 +1,90 @@
+@media (min-width: 480px) and (max-width: 768px) {
+
+  .site-header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .main-content-left,
+    .main-content-right {
+      flex-basis: 45%;
+      p {
+        text-align: justify;
+      }
+    }
+  }
+
+  .hero-bottom {
+    .hero-bottom-caption {
+      width: 50%;
+      float: right;
+      clear: both;
+    }
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    .featured {
+      flex-basis: 50%;
+    }
+  }
+
+  .site-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .footer-menu {
+      flex-basis: 50%;
+    }
+  }
+
+  // Resource center
+  .short-info,
+  .author-social {
+    width: 70%;
+    margin: auto;
+  }
+  .short-info {
+    width: 40%;
+  }
+  .trending {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .images {
+      flex-basis: 33%;
+    }
+  }
+  .posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .center-highlight {
+      flex-basis: 33%;
+    }
+  }
+
+  // Team page
+  .team-members {
+    div[class*='team'] {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      div[class*='team'] {
+        flex-basis: 45%;
+      }
+    }
+  }
+
+  // Single team page
+
+}

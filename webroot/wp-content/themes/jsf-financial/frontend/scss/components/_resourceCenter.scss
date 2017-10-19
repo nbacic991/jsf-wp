@@ -55,6 +55,7 @@
         font-family: Merriweather;
         font-weight: bold;
         color: #FFF;
+        margin-bottom: 40px;
       }
       a {
         text-decoration: none;
@@ -139,11 +140,10 @@
       }
     }
     aside {
-      padding-top: 20px;
-      max-width: 360px;
       width: 100%;
       margin: auto;
       .about-author {
+        margin-top: 20px;
         .short-info {
           display: flex;
           justify-content: space-between;
@@ -173,7 +173,7 @@
           }
         }
         .author-social {
-          margin-top: 10px;
+          margin: 20px auto;
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap;
@@ -186,8 +186,6 @@
         }
         .author-info {
           margin-top: 20px;
-          max-width: 360px;
-          width: 100%;
           background-color: #f2f2f2;
           padding: 10px;
           .about {
