@@ -47,25 +47,24 @@
     background-color: lightgray;
     padding: 20px 10px;
     margin-bottom: 10px;
-    height: 200px;
     h1 {
       font-family: Brandon Grotesque;
       color: #346397;
       text-transform: uppercase;
       text-align: center;
-    }
-    p {
-      font-family: Merriweather;
       position: relative;
       &::after {
         position: absolute;
         content: '';
-        top: 140px;
-        left: 0;
+        top: 140%;
+        left: 50px;
         border-left: 40px solid transparent;
         border-right: 40px solid transparent;
         border-top: 40px solid lightgray;
       }
+    }
+    p {
+      font-family: Merriweather;
     }
   }
   .team-member {

@@ -8,7 +8,7 @@
                     <button>Learn more</button>
                 </div>
                 <div class="flex-image">
-                    <img src="http://via.placeholder.com/250x250" alt="some photo">
+                    <img src="http://via.placeholder.com/500x500" alt="some photo">
                 </div>
             </li>
             <li>
