@@ -3,8 +3,31 @@ html, body {
   padding: 0;
   overflow-x: hidden;
   .site {
-    max-width: 1180px;
     width: 100%;
     margin: auto;
+    .site-header {
+      margin: 20px auto;
+      max-width: 1180px;
+      width: 100%;
+    }
+    .site-main {
+      margin: auto;
+      max-width: 1180px;
+      width: 100%;
+    }
+    .site-content {
+      .team-founders,
+      .team-management,
+      .team-bussines,
+      .team-account {
+        max-width: 1180px;
+        width: 100%;
+        margin: 30px auto;
+        &:nth-child(1) {
+          margin-top: 70px;
+        }
+      }
+    }
   }
 }
+
