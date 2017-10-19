@@ -85,6 +85,80 @@
     }
   }
 
-  // Single team page
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  // Home page
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .main-content-left,
+    .main-content-right {
+      flex-basis: 45%;
+      display: flex;
+      justify-content: space-between;
+      .post-info {
+        padding-left: 20px;
+      }
+      img {
+        max-width: 180px;
+        width: 100%;
+        max-height: 220px;
+        height: 100%;
+      }
+    }
+  }
+  .highlighted-resources {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .center-highlight {
+      flex-basis: 33%;
+    }
+  }
+  .hero-bottom-caption {
+    width: 60%;
+    float: right;
+    clear: both;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .featured {
+      flex-basis: 33%;
+    }
+  }
+  .site-footer {
+    .footer-menus {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1180px;
+      width: 100%;
+      .footer-menu {
+        flex-basis: 23%;
+        h1 {
+          margin: 0;
+          padding: 20px 0 10px 0;
+          border-left: 2px solid #FFF;
+        }
+      }
+    }
+    .site-info {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      p {
+        margin-top: 0;
+        flex-basis: 50%;
+      }
+    }
+  }
 
 }
