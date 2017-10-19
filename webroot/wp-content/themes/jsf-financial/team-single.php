@@ -1,7 +1,7 @@
 <?php /* Template Name: Single Team Page */ ?>
 <?php include 'header.php'?>
 
-<section class="team-member">
+<section class="single-team-member">
     <div class="highlighted">
         <h1>Our team - Investment management</h1>
     </div>

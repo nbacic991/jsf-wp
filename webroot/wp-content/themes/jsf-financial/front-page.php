@@ -7,15 +7,19 @@
             <section class="main-content">
                 <div class="main-content-left">
                     <img src="http://via.placeholder.com/180x220" alt="">
-                    <a class="link" href="#">Our investment philosophy</a>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                    <a class="learn" href="#">Learn more</a>
+                    <div class="post-info">
+                        <a class="link" href="#">Our investment philosophy</a>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                        <a class="learn" href="#">Learn more</a>
+                    </div>
                 </div>
                 <div class="main-content-right">
                     <img src="http://via.placeholder.com/180x220" alt="">
-                    <a class="link" href="#">Why holistic financial planning ?</a>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                    <a class="read" href="#">Read more</a>
+                    <div class="post-info">
+                        <a class="link" href="#">Why holistic financial planning ?</a>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                        <a class="read" href="#">Read more</a>
+                    </div>
                 </div>
             </section>
             <section class="resource-center-highlights">
@@ -23,20 +27,22 @@
                     <p>Resource center highlights</p>
                     <a href="#">view all</a>
                 </div>
-                <div class="center-highlight">
-                    <img src="http://via.placeholder.com/360x240" alt="">
-                    <p>JSF wealth managers overview</p>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="center-highlight">
-                    <img src="http://via.placeholder.com/360x240" alt="">
-                    <p>Focusing on both short-term financial needs and long term goals</p>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="center-highlight">
-                    <img src="http://via.placeholder.com/360x240" alt="">
-                    <p>Financial planners in Los Angeles</p>
-                    <a href="#">Read more</a>
+                <div class="highlighted-resources">
+                    <div class="center-highlight">
+                        <img src="http://via.placeholder.com/360x240" alt="">
+                        <p>JSF wealth managers overview</p>
+                        <a href="#">Read more</a>
+                    </div>
+                    <div class="center-highlight">
+                        <img src="http://via.placeholder.com/360x240" alt="">
+                        <p>Focusing on both short-term financial needs and long term goals</p>
+                        <a href="#">Read more</a>
+                    </div>
+                    <div class="center-highlight">
+                        <img src="http://via.placeholder.com/360x240" alt="">
+                        <p>Financial planners in Los Angeles</p>
+                        <a href="#">Read more</a>
+                    </div>
                 </div>
             </section>
             <section class="hero-bottom">
