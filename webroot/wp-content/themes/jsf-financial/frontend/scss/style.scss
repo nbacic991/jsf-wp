@@ -1,10 +1,6 @@
 // Importing base style
 @import "components/base";
 
-// Importing responsive behavior
-@import "components/responsive";
-
-
 // Importing component style
 @import "components/mainContent";
 @import "components/navigation";
@@ -20,3 +16,6 @@
 
 // Import font style
 @import "components/typography";
+
+// Importing responsive behavior
+@import "components/responsive";

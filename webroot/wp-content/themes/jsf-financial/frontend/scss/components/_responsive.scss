@@ -87,7 +87,53 @@
 
 }
 
+@media (min-width: 768px) {
+
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    .main-navigation {
+      button {
+        display: none;
+      }
+      .menu {
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-end;
+        .menu-item-has-children:hover {
+          position: relative;
+          .menu-item-13,
+          .menu-item-17 {
+            &::before {
+              color: #666666;
+              font-family: ElegantIcons;
+              content: '\45';
+              display: inline-block;
+            }
+          }
+           ul {
+             display: block;
+             position: absolute;
+             left: 0;
+             z-index: 1;
+             li {
+               padding: 5px 0 0 10px;
+               background-color: #DEEAD6;
+               text-align: left;
+               width: 300px;
+             }
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
+
 
   // Home page
   .main-content {
