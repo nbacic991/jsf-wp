@@ -84,20 +84,22 @@
             <p>Resource center highlights</p>
             <a href="#">view all</a>
         </div>
-        <div class="center-highlight">
-            <img src="http://via.placeholder.com/360x240" alt="">
-            <p>JSF wealth managers overview</p>
-            <a href="#">Read more</a>
-        </div>
-        <div class="center-highlight">
-            <img src="http://via.placeholder.com/360x240" alt="">
-            <p>Focusing on both short-term financial needs and long term goals</p>
-            <a href="#">Read more</a>
-        </div>
-        <div class="center-highlight">
-            <img src="http://via.placeholder.com/360x240" alt="">
-            <p>Financial planners in Los Angeles</p>
-            <a href="#">Read more</a>
+        <div class="posts">
+            <div class="center-highlight">
+                <img src="http://via.placeholder.com/360x240" alt="">
+                <p>JSF wealth managers overview</p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="center-highlight">
+                <img src="http://via.placeholder.com/360x240" alt="">
+                <p>Focusing on both short-term financial needs and long term goals</p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="center-highlight">
+                <img src="http://via.placeholder.com/360x240" alt="">
+                <p>Financial planners in Los Angeles</p>
+                <a href="#">Read more</a>
+            </div>
         </div>
     </section>
 </section>
