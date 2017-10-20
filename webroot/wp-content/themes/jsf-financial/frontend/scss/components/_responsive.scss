@@ -8,11 +8,6 @@
 
 @media (min-width: 480px) and (max-width: 768px) {
 
-  .site-header {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
   .main-content {
     display: flex;
     justify-content: space-around;
@@ -68,6 +63,7 @@
     flex-wrap: wrap;
     .images {
       flex-basis: 33%;
+      margin: auto;
     }
   }
   .posts {
@@ -91,14 +87,32 @@
     }
   }
 
+  // Resource page
+  .posts {
+    .images {
+      margin: auto;
+      display: block;
+      text-align: center;
+    }
+  }
+
 
 }
 
-@media (min-width: 768px) {
+@media (max-width: 876px) {
+  .site-header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 876px) {
 
   .site-header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     .main-navigation {
       button {
         display: none;
@@ -122,7 +136,7 @@
              display: block;
              position: absolute;
              left: 0;
-             z-index: 1;
+             z-index: 9999999999999;
              li {
                padding: 5px 0 0 10px;
                background-color: #DEEAD6;
@@ -296,6 +310,44 @@
     }
     .member-info {
       flex-basis: 50%;
+    }
+  }
+
+  // Resource page
+  .resource-content {
+    .top {
+      display: flex;
+      justify-content: space-between;
+      .images {
+        .short-desc {
+          width: 360px;
+        }
+        .bottom {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      aside {
+        margin: 0;
+        flex-basis: 50%;
+        .categories {
+          ul {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    .bottom {
+      .trending {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 50px;
+        align-items: center;
+        .images {
+          flex-basis: 33%;
+        }
+      }
     }
   }
 
@@ -476,4 +528,76 @@
     }
   }
 
+  // Resource center
+  .resource-content {
+    .top {
+      margin: auto;
+      max-width: 1180px;
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      grid-column-gap: 20px;
+      aside {
+        margin: 0;
+        .about-author {
+          .short-info {
+            width: 200px;
+            .post-date {
+              padding-right: 20px;
+            }
+          }
+        }
+      }
+    }
+    .bottom {
+      .title {
+        margin-bottom: 20px;
+      }
+      .trending {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .images {
+          flex-basis: 33%;
+          .description {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+
+  // Resource Center repository
+
+  .top {
+    .posts {
+      .images {
+        display: grid;
+        grid-template-columns: 360px 1fr;
+        grid-column-gap: 50px;
+        margin-bottom: 50px;
+        .img-l {
+          .trending-date {
+            width: 348px;
+          }
+        }
+        .img-r {
+          text-align: left;
+          h1 {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .resource-center-highlights {
+    .posts {
+      display: flex;
+      justify-content: space-between;
+      .center-highlight {
+        flex-basis: 33%;
+      }
+    }
+  }
 }

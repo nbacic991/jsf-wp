@@ -109,15 +109,17 @@
     }
   }
   .member-photo {
+    max-width: 400px;
+    max-height: 500px;
+    display: block;
+    margin: auto;
+    width: 100%;
     img {
-      display: block;
-      margin: auto;
-      max-width: 400px;
-      max-height: 500px;
       width: 100%;
     }
   }
   .member-info {
+    width: 500px;
     padding: 10px;
     h1 {
       font-family: Brandon Grotesque;

@@ -2,8 +2,7 @@
 <?php include 'header.php'?>
 
 <section class="resource-content">
-    <div class="hero-res">
-    </div>
+    <div class="hero-res"></div>
     <div class="top">
         <div class="content">
             <h1>Los Angeles county in smallest short-term issue since '08</h1>
@@ -94,20 +93,26 @@
         <div class="trending">
             <div class="images">
                 <img src="http://via.placeholder.com/360x250" alt="">
-                <p class="image-title">JSF wealth managers overview</p>
-                <p class="trending-date">23 <span>November</span></p>
+                <div class="description">
+                    <p class="image-title">JSF wealth managers overview</p>
+                    <p class="trending-date">23 <span>November</span></p>
+                </div>
                 <a href="#">Read more</a>
             </div>
             <div class="images">
                 <img src="http://via.placeholder.com/360x250" alt="">
-                <p class="image-title">JSF wealth managers overview</p>
-                <p class="trending-date">23 <span>November</span></p>
+                <div class="description">
+                    <p class="image-title">Focusing on both short-term financial needs and long-term goals</p>
+                    <p class="trending-date">23 <span>November</span></p>
+                </div>
                 <a href="#">Read more</a>
             </div>
             <div class="images">
                 <img src="http://via.placeholder.com/360x250" alt="">
-                <p class="image-title">JSF wealth managers overview</p>
-                <p class="trending-date">23 <span>November</span></p>
+                <div class="description">
+                    <p class="image-title">Financial planners in Los Angeles</p>
+                    <p class="trending-date">23 <span>November</span></p>
+                </div>
                 <a href="#">Read more</a>
             </div>
         </div>
