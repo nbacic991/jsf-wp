@@ -8,11 +8,6 @@
 
 @media (min-width: 480px) and (max-width: 768px) {
 
-  .site-header {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
   .main-content {
     display: flex;
     justify-content: space-around;
@@ -68,6 +63,7 @@
     flex-wrap: wrap;
     .images {
       flex-basis: 33%;
+      margin: auto;
     }
   }
   .posts {
@@ -91,14 +87,32 @@
     }
   }
 
+  // Resource page
+  .posts {
+    .images {
+      margin: auto;
+      display: block;
+      text-align: center;
+    }
+  }
+
 
 }
 
-@media (min-width: 768px) {
+@media (max-width: 876px) {
+  .site-header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 876px) {
 
   .site-header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     .main-navigation {
       button {
         display: none;
@@ -121,13 +135,23 @@
            ul {
              display: block;
              position: absolute;
-             left: 0;
-             z-index: 1;
+             top: 20px;
+             left: -70px;
+             z-index: 9999999999999;
+             background-color: #DEEAD6;
+             width: 300px;
+             //&::after {
+             //  content: '';
+             //  border-left: 10px solid transparent;
+             //  border-right: 10px solid transparent;
+             //  border-bottom: 20px solid #DEEAD6;
+             //  position: absolute;
+             //  top: 0;
+             //  display: block;
+             //}
              li {
-               padding: 5px 0 0 10px;
-               background-color: #DEEAD6;
                text-align: left;
-               width: 300px;
+               padding-bottom: 10px;
              }
           }
         }
@@ -299,6 +323,52 @@
     }
   }
 
+  // Resource page
+  .resource-content {
+    .top {
+      display: flex;
+      justify-content: space-between;
+      .images {
+        .short-desc {
+          width: 360px;
+        }
+        .bottom {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      aside {
+        margin: 0;
+        flex-basis: 50%;
+        .categories {
+          ul {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    .bottom {
+      .posts {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .center-highlight {
+          flex-basis: 33%;
+        }
+      }
+      .trending {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 50px;
+        align-items: center;
+        .images {
+          flex-basis: 33%;
+        }
+      }
+    }
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -357,7 +427,7 @@
         flex-basis: 23%;
         h1 {
           margin: 0;
-          padding: 20px 0 10px 0;
+          padding: 50px 0 10px 0;
           border-left: 2px solid #FFF;
         }
       }
@@ -476,4 +546,76 @@
     }
   }
 
+  // Resource center
+  .resource-content {
+    .top {
+      margin: auto;
+      max-width: 1180px;
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      grid-column-gap: 20px;
+      aside {
+        margin: 0;
+        .about-author {
+          .short-info {
+            width: 200px;
+            .post-date {
+              padding-right: 20px;
+            }
+          }
+        }
+      }
+    }
+    .bottom {
+      .title {
+        margin-bottom: 20px;
+      }
+      .trending {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .images {
+          flex-basis: 33%;
+          .description {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+
+  // Resource Center repository
+
+  .top {
+    .posts {
+      .images {
+        display: grid;
+        grid-template-columns: 360px 1fr;
+        grid-column-gap: 50px;
+        margin-bottom: 50px;
+        .img-l {
+          .trending-date {
+            width: 348px;
+          }
+        }
+        .img-r {
+          text-align: left;
+          h1 {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .resource-center-highlights {
+    .posts {
+      display: flex;
+      justify-content: space-between;
+      .center-highlight {
+        flex-basis: 33%;
+      }
+    }
+  }
 }

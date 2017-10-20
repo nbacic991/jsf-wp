@@ -1,14 +1,70 @@
+.resource-content {
+  .top {
+    .posts {
+      .trending-title {
+        margin-top: 0;
+        font-family: Brandon Grotesque;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #7FADD3;
+      }
+      .images {
+        h1 {
+          margin-top: 0;
+          padding-left: 10px;
+          font-size: 40px;
+          color: #346397;
+        }
+        .short-desc {
+          margin-top: 0;
+          font-family: Merriweather;
+          color: #999999;
+        }
+        .trending-date {
+          height: 70px;
+          margin: 0 auto 20px auto;
+          padding-right: 10px;
+          text-align: right;
+          font-family: Brandon Grotesque;
+          font-weight: bold;
+          color: #7FADD3;
+          font-size: 30px;
+          border-right: 2px solid #666666;
+          width: 100px;
+          span {
+            text-transform: uppercase;
+            color: #999999;
+            font-size: 16px;
+            display: block;
+          }
+        }
+        a {
+          font-family: Brandon Grotesque;
+          font-weight: bold;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #7FADD3;
+          &:after {
+            font-family: ElegantIcons;
+            display: inline-block;
+            content: '\45';
+          }
+        }
+      }
+    }
+  }
+}
+
 .resource-center-highlights {
-  padding: 10px;
   .title {
-    p, a {
+    p {
+      font-family: Brandon Grotesque;
+      font-weight: bold;
       text-transform: uppercase;
       text-decoration: none;
-      margin: 0;
       display: inline-block;
-    }
-    a {
-      float: right;
+      color: #7FADD3;
+      font-size: 18px;
     }
   }
   .center-highlight {

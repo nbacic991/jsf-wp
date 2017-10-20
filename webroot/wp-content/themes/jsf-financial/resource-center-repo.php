@@ -13,33 +13,44 @@
             <a href="#">Read more</a>
         </div>
     </div>
-    <div class="bottom">
-        <div class="title">
-            <h1>What's trending</h1>
-            <a href="#">View all</a>
-        </div>
-        <div class="trending">
-            <div class="images">
-                <img src="http://via.placeholder.com/360x250" alt="">
-                <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed porta porttitor. Phasellus fermentum lorem magna, vel mattis metus convallis in. Aliquam molestie dui id dui egestas, quis tempor orci efficitur. Quisque tincidunt consequat justo a egestas. </p>
-                <p class="trending-date">23 <span>November</span></p>
-                <a href="#">Read more</a>
-            </div>
-            <div class="images">
-                <img src="http://via.placeholder.com/360x250" alt="">
-                <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed porta porttitor. Phasellus fermentum lorem magna, vel mattis metus convallis in. Aliquam molestie dui id dui egestas, quis tempor orci efficitur. Quisque tincidunt consequat justo a egestas. </p>
-                <p class="trending-date">23 <span>November</span></p>
-                <a href="#">Read more</a>
-            </div>
-            <div class="images">
-                <img src="http://via.placeholder.com/360x250" alt="">
-                <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed porta porttitor. Phasellus fermentum lorem magna, vel mattis metus convallis in. Aliquam molestie dui id dui egestas, quis tempor orci efficitur. Quisque tincidunt consequat justo a egestas. </p>
-                <p class="trending-date">23 <span>November</span></p>
-                <a href="#">Read more</a>
-            </div>
-        </div>
-    </div>
+
     <div class="top">
+        <div class="posts">
+            <h1 class="trending-title">What's trending</h1>
+            <div class="images">
+                <div class="img-l">
+                    <img src="http://via.placeholder.com/360x250" alt="">
+                    <p class="trending-date">23 <span>November</span></p>
+                </div>
+                <div class="img-r">
+                    <h1>Los Angeles county in smallest short-term issue since '08</h1>
+                    <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed porta porttitor. Phasellus fermentum lorem magna, vel mattis metus convallis in. Aliquam molestie dui id dui egestas, quis tempor orci efficitur. Quisque tincidunt consequat justo a egestas. </p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="images">
+                <div class="img-l">
+                    <img src="http://via.placeholder.com/360x250" alt="">
+                    <p class="trending-date">23 <span>November</span></p>
+                </div>
+                <div class="img-r">
+                    <h1>It's not all about you</h1>
+                    <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed porta porttitor. Phasellus fermentum lorem magna, vel mattis metus convallis in. Aliquam molestie dui id dui egestas, quis tempor orci efficitur. Quisque tincidunt consequat justo a egestas. </p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="images">
+                <div class="img-l">
+                    <img src="http://via.placeholder.com/360x250" alt="">
+                    <p class="trending-date">23 <span>November</span></p>
+                </div>
+                <div class="img-r">
+                    <h1>When financial disaster hits home</h1>
+                    <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed porta porttitor. Phasellus fermentum lorem magna, vel mattis metus convallis in. Aliquam molestie dui id dui egestas, quis tempor orci efficitur. Quisque tincidunt consequat justo a egestas. </p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
         <aside>
             <div class="categories">
                 <ul>Categories
@@ -79,29 +90,32 @@
             </div>
         </aside>
     </div>
-    <section class="resource-center-highlights">
-        <div class="title">
-            <p>Resource center highlights</p>
-            <a href="#">view all</a>
-        </div>
-        <div class="posts">
-            <div class="center-highlight">
-                <img src="http://via.placeholder.com/360x240" alt="">
-                <p>JSF wealth managers overview</p>
-                <a href="#">Read more</a>
+    <div class="bottom">
+        <section class="resource-center-highlights">
+            <div class="title">
+                <h1>Resource center highlights</h1>
+                <a href="#">View all</a>
             </div>
-            <div class="center-highlight">
-                <img src="http://via.placeholder.com/360x240" alt="">
-                <p>Focusing on both short-term financial needs and long term goals</p>
-                <a href="#">Read more</a>
+            <div class="posts">
+                <div class="center-highlight">
+                    <img src="http://via.placeholder.com/360x240" alt="">
+                    <p>JSF wealth managers overview</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="center-highlight">
+                    <img src="http://via.placeholder.com/360x240" alt="">
+                    <p>Focusing on both short-term financial needs and long term goals</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="center-highlight">
+                    <img src="http://via.placeholder.com/360x240" alt="">
+                    <p>Financial planners in Los Angeles</p>
+                    <a href="#">Read more</a>
+                </div>
             </div>
-            <div class="center-highlight">
-                <img src="http://via.placeholder.com/360x240" alt="">
-                <p>Financial planners in Los Angeles</p>
-                <a href="#">Read more</a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
+
 </section>
 
 <?php include 'footer.php'?>
