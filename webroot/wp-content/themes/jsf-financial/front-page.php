@@ -6,7 +6,7 @@
         <main id="main" class="site-main">
             <section class="main-content">
                 <div class="main-content-left">
-                    <img src="http://via.placeholder.com/180x220" alt="">
+                    <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Depositphotos_118614784_original.jpg" alt="">
                     <div class="post-info">
                         <a class="link" href="#">Our investment philosophy</a>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="main-content-right">
-                    <img src="http://via.placeholder.com/180x220" alt="">
+                    <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Depositphotos_11629572_original.jpg" alt="">
                     <div class="post-info">
                         <a class="link" href="#">Why holistic financial planning ?</a>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
@@ -29,17 +29,17 @@
                 </div>
                 <div class="highlighted-resources">
                     <div class="center-highlight">
-                        <img src="http://via.placeholder.com/360x240" alt="">
+                        <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/fotolia_2818273.jpg" alt="">
                         <p>JSF wealth managers overview</p>
                         <a href="#">Read more</a>
                     </div>
                     <div class="center-highlight">
-                        <img src="http://via.placeholder.com/360x240" alt="">
+                        <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/tough-growth.jpg" alt="">
                         <p>Focusing on both short-term financial needs and long term goals</p>
                         <a href="#">Read more</a>
                     </div>
                     <div class="center-highlight">
-                        <img src="http://via.placeholder.com/360x240" alt="">
+                        <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/iStock_000004319094XLarge-1.jpg" alt="">
                         <p>Financial planners in Los Angeles</p>
                         <a href="#">Read more</a>
                     </div>

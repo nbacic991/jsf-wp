@@ -2,43 +2,39 @@
     <div class="flexslider">
         <ul class="slides">
             <li>
-                <img src="http://via.placeholder.com/920x400" alt="1st slide">
                 <div class="flex-caption">
                     <p>Tailored advice for life's unpredictable challenges</p>
                     <button>Learn more</button>
                 </div>
                 <div class="flex-image">
-                    <img src="http://via.placeholder.com/500x500" alt="some photo">
+                    <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Depositphotos_13512336_original-wheat-crop.jpg" alt="some photo">
                 </div>
             </li>
             <li>
-                <img src="http://via.placeholder.com/920x400" alt="1st slide">
                 <div class="flex-caption">
                     <p>Tailored advice for life's unpredictable challenges</p>
                     <button>Learn more</button>
                 </div>
                 <div class="flex-image">
-                    <img src="http://via.placeholder.com/250x250" alt="some photo">
+                    <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Depositphotos_13512336_original-wheat-crop.jpg" alt="some photo">
                 </div>
             </li>
             <li>
-                <img src="http://via.placeholder.com/920x400" alt="1st slide">
                 <div class="flex-caption">
                     <p>Tailored advice for life's unpredictable challenges</p>
                     <button>Learn more</button>
                 </div>
                 <div class="flex-image">
-                    <img src="http://via.placeholder.com/250x250" alt="some photo">
+                    <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Depositphotos_13512336_original-wheat-crop.jpg" alt="some photo">
                 </div>
             </li>
             <li>
-                <img src="http://via.placeholder.com/920x400" alt="1st slide">
                 <div class="flex-caption">
                     <p>Tailored advice for life's unpredictable challenges</p>
                     <button>Learn more</button>
                 </div>
                 <div class="flex-image">
-                    <img src="http://via.placeholder.com/250x250" alt="some photo">
+                    <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Depositphotos_13512336_original-wheat-crop.jpg" alt="some photo">
                 </div>
             </li>
         </ul>
