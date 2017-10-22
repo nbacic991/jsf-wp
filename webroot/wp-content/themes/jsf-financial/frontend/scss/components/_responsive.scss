@@ -113,6 +113,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-end;
     .main-navigation {
       button {
         display: none;
@@ -191,8 +192,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 50px;
     .center-highlight {
-      flex-basis: 33%;
+      flex-basis: 360px;
     }
   }
   .hero-bottom-caption {
@@ -398,20 +400,38 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 50px;
     .center-highlight {
-      flex-basis: 33%;
+      flex-basis: 360px;
     }
   }
-  .hero-bottom-caption {
-    width: 60%;
-    float: right;
-    clear: both;
+  .hero-bottom {
+    .hero-bottom-caption {
+      width: 50%;
+      float: right;
+      clear: both;
+      margin-right: 50px;
+      h1 {
+        font-family: Brandon Grotesque;
+        font-size: 32px;
+        margin-top: 100px;
+      }
+      .date {
+        font-size: 16px;
+        margin-bottom: 50px;
+      }
+      .caption {
+        font-size: 16px;
+        margin-bottom: 50px;
+      }
+    }
   }
 
   .footer-top {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 70px 0;
     .featured {
       flex-basis: 33%;
     }

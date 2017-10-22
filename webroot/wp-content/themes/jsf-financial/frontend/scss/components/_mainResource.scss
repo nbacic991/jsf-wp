@@ -57,20 +57,30 @@
 
 .resource-center-highlights {
   .title {
+    font-family: Brandon Grotesque;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7FADD3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     p {
-      font-family: Brandon Grotesque;
-      font-weight: bold;
-      text-transform: uppercase;
       text-decoration: none;
-      display: inline-block;
-      color: #7FADD3;
       font-size: 18px;
+    }
+    a {
+      color: #7FADD3;
+      text-decoration: none;
+      font-size: 16px;
     }
   }
   .center-highlight {
     width: 100%;
     img {
+      max-width: 360px;
+      max-height: 264px;
       width: 100%;
+      height: 100%;
     }
     p {
       font-family: 'Merriweather', serif;
@@ -79,10 +89,16 @@
     }
     a {
       font-family: Brandon Grotesque;
+      font-weight: bold;
       font-size: 14px;
       text-transform: uppercase;
       text-decoration: none;
       color: #7FADD3;
+      &::after {
+        font-family: ElegantIcons;
+        content: '\45';
+        display: inline-block;
+      }
     }
   }
 }
