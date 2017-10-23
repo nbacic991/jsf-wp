@@ -1,6 +1,4 @@
 .main-content {
-  margin-bottom: 20px;
-  padding: 0 5px;
   img {
     width: 100%;
   }
@@ -13,12 +11,14 @@
     display: block;
     font-family: Brandon Grotesque;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 27px;
     color: #346397;
+    margin-top: 0;
   }
   p {
     font-family: Merriweather;
     font-size: 16px;
+    color: #333333;
   }
   .read,
   .learn {

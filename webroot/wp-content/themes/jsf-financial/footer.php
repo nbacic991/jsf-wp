@@ -16,19 +16,19 @@
 	<footer id="colophon" class="site-footer">
         <div class="footer-menus">
             <div class="footer-menu">
-                <h1>Questions</h1>
+                <p class="menu-title">Questions</p>
 		        <?php wp_nav_menu (array('theme_location' => 'footer-1','menu_class' => 'nav'));?>
             </div>
             <div class="footer-menu">
-                <h1>About Us</h1>
+                <p class="menu-title">About Us</p>
 		        <?php wp_nav_menu (array('theme_location' => 'footer-2','menu_class' => 'nav'));?>
             </div class="footer-menu">
             <div class="footer-menu">
-                <h1>Services</h1>
+                <p class="menu-title">Services</p>
 		        <?php wp_nav_menu (array('theme_location' => 'footer-3','menu_class' => 'nav'));?>
             </div>
             <div class="footer-menu">
-                <h1>Resource</h1>
+                <p class="menu-title">Resource</p>
 		        <?php wp_nav_menu (array('theme_location' => 'footer-4','menu_class' => 'nav'));?>
             </div>
         </div>

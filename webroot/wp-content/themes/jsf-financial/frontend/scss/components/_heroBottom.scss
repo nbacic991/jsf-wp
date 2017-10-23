@@ -8,14 +8,16 @@
   background-size: cover;
   .hero-bottom-caption {
     padding: 10px;
+    text-align: center;
     h1,
     button {
       text-transform: uppercase;
     }
-    h1 {
+    h2 {
       font-family: Brandon Grotesque;
+      text-transform: uppercase;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 34px;
       color: #336497;
       margin-bottom: 0;
     }
@@ -27,7 +29,7 @@
     .caption {
       font-family: Merriweather;
       color: #333333;
-      font-size: 12px;
+      font-size: 20px;
     }
     button {
       font-family: Brandon Grotesque;
