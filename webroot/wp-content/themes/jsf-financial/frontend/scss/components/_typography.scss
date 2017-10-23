@@ -1,8 +1,16 @@
+@import "elegantIcons";
+
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300');
 
 @font-face {
-  font-family: ElegantIcons;
-  src: url('fonts/ElegantIcons.ttf');
+  font-family: 'ElegantIcons';
+  src:url('fonts/ElegantIcons.eot');
+  src:url('fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+  url('fonts/ElegantIcons.woff') format('woff'),
+  url('fonts/ElegantIcons.ttf') format('truetype'),
+  url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {

@@ -8,7 +8,7 @@
                 <div class="main-content-left">
                     <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Depositphotos_118614784_original.jpg" alt="">
                     <div class="post-info">
-                        <a class="link" href="#">Our investment philosophy</a>
+                        <h1 class="link" href="#">Our investment philosophy</h1>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
                         <a class="learn" href="#">Learn more</a>
                     </div>
@@ -16,7 +16,7 @@
                 <div class="main-content-right">
                     <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Depositphotos_11629572_original.jpg" alt="">
                     <div class="post-info">
-                        <a class="link" href="#">Why holistic financial planning ?</a>
+                        <h1 class="link" href="#">Why holistic financial planning ?</h1>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
                         <a class="read" href="#">Read more</a>
                     </div>
@@ -55,33 +55,27 @@
             </section>
             <section class="footer-top">
                 <div class="featured">
-                    <img src="http://via.placeholder.com/80x80" alt="icons">
-                    <br>
+                    <span aria-hidden="true" class="icon_wallet"></span>
                     <a>Trust and extate planning</a>
                 </div>
                 <div class="featured">
-                    <img src="http://via.placeholder.com/80x80" alt="icons">
-                    <br>
+                    <span aria-hidden="true" class="icon_wallet"></span>
                     <a>Retirement planning</a>
                 </div>
                 <div class="featured">
-                    <img src="http://via.placeholder.com/80x80" alt="icons">
-                    <br>
+                    <span aria-hidden="true" class="icon_wallet"></span>
                     <a>Personal budgeting</a>
                 </div>
                 <div class="featured">
-                    <img src="http://via.placeholder.com/80x80" alt="icons">
-                    <br>
+                    <span aria-hidden="true" class="icon_wallet"></span>
                     <a>Risk and task management</a>
                 </div>
                 <div class="featured">
-                    <img src="http://via.placeholder.com/80x80" alt="icons">
-                    <br>
+                    <span aria-hidden="true" class="icon_wallet"></span>
                     <a>Investment management</a>
                 </div>
                 <div class="featured">
-                    <img src="http://via.placeholder.com/80x80" alt="icons">
-                    <br>
+                    <span aria-hidden="true" class="icon_wallet"></span>
                     <a>Charitable contribution planning</a>
                 </div>
             </section>
