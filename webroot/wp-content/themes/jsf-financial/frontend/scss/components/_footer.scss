@@ -1,5 +1,4 @@
 .site-footer {
-  text-align: center;
   background-color: #346397;
   .footer-menus {
     margin: auto;
@@ -21,7 +20,10 @@
     font-family: 'Merriweather';
     font-size: 14px;
     text-decoration: none;
-    color: #FFF;
+    color: #C9D5E2;
+    &:hover {
+      color: #C9D5E2;
+    }
   }
   .site-info {
     padding-bottom: 30px;
