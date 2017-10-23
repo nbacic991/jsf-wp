@@ -1,6 +1,11 @@
 .site-footer {
   background-color: #346397;
   text-align: center;
+  .footer-menus {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
+  }
   .menu-title {
     font-family: Brandon Grotesque;
     font-weight: bold;

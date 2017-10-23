@@ -67,7 +67,7 @@
                     <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Depositphotos_11629572_original.jpg" alt="">
                     <div class="post-info">
                         <div class="post-info">
-                            <h1 class="link">Why holistic financial planning ?</h1>
+                            <h1 class="link">Why holistic financial planning?</h1>
                             <p>In creating financial plan, JSF wealth managers focus on both short-therm financial
                                 needs and long-term goals, taking a global view of each client's financial life. Our
                                 financial planners in Los Angeles want our clients to have the satisfaction that
