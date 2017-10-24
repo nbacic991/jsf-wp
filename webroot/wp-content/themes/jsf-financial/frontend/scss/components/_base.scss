@@ -1,40 +1,117 @@
+
+$color-white : #FFFFFF;
+$color-black : #000000;
+$color-gray : #E2E2E2;
+
+
+
 html, body {
   margin: auto 0;
-  .site {
-    width: 100%;
-    margin: auto;
-    .site-header {
-      margin: 20px auto;
-      max-width: 1180px;
-      width: 100%;
-    }
-    .main-content,
-    .resource-center-highlights,
-    .footer-top {
-      margin: 70px auto;
-      max-width: 1180px;
-      width: 100%;
-    }
-    .site-content {
-      .team-founders,
-      .team-management,
-      .team-bussines,
-      .team-account {
-        max-width: 1180px;
-        width: 100%;
-        margin: 30px auto;
-        &:nth-child(1) {
-          margin-top: 70px;
-        }
-      }
-    }
-    .site-footer {
-      .site-info {
-        max-width: 1180px;
-        width: 100%;
-        margin: auto;
-      }
-    }
+}
+
+.site {
+  width: 100%;
+  margin: auto;
+}
+.site-header {
+  margin: 20px auto;
+  max-width: 1180px;
+  width: 100%;
+}
+.main-content,
+.resource-center-highlights,
+.footer-top {
+  margin: 70px auto;
+  max-width: 1180px;
+  width: 100%;
+}
+.team-founders,
+.team-management,
+.team-bussines,
+.team-account {
+  max-width: 1180px;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.site-info {
+  max-width: 1180px;
+  width: 100%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.gray-box {
+  background-color: $color-gray;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  position: relative;
+  h2,
+  h3,
+  p {
+    text-align: center;
   }
+}
+.inner {
+  margin: auto;
+  max-width: 1180px;
+  width: 100%;
+}
+
+.footer-top-icon {
+  font-size: 70px;
+  background-color: #DEEAD6;
+  color: #336497;
+  border-radius: 50%;
+  padding: 10px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 20px auto;
+}
+
+/*
+ * Global styling
+ */
+
+::after,
+::before {
+  display: inline-block;
+  vertical-align: middle;
+}
+:hover {
+  transition: .2s ease-in;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: Brandon Grotesque;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #336497;
+}
+
+p {
+  font-family: Merriweather;
+  color: #333333;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: .4s ease-in;
+}
+
+button {
+  display: block;
+  border: none;
+  text-align: center;
+  cursor: pointer;
 }
 

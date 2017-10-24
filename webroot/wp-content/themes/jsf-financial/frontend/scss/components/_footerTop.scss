@@ -8,15 +8,7 @@
     font-weight: bold;
     font-size: 16px;
     span {
-      font-size: 70px;
-      background-color: #DEEAD6;
-      color: #336497;
-      border-radius: 50%;
-      padding: 10px;
-      display: block;
-      width: 80px;
-      height: 80px;
-      margin: 20px auto;
+
       &::before {
         margin-bottom: 30px;
       }
