@@ -1,0 +1,49 @@
+.shake-hands,
+.money,
+.budget,
+.umbrella,
+.chart,
+.money-location {
+  position: relative;
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 45px;
+    margin: auto;
+    right: 0;
+    text-align: center;
+  }
+}
+.shake-hands {
+  &::after {
+    content: url("img/ico/shake-hands.svg");
+  }
+}
+.money {
+  &::after {
+    content: url("img/ico/money.svg");
+  }
+}
+.budget {
+  &::after {
+    content: url("img/ico/budget.svg");
+  }
+}
+.umbrella {
+  &::after {
+    content: url("img/ico/umbrella.svg");
+  }
+}
+.chart {
+  &::after {
+    content: url("img/ico/chart.svg");
+  }
+}
+.money-location {
+  &::after {
+    content: url("img/ico/money-location.svg");
+  }
+}

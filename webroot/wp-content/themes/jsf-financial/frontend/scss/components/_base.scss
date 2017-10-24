@@ -59,26 +59,20 @@ html, body {
 }
 
 .footer-top-icon {
-  font-size: 70px;
-  background-color: #DEEAD6;
-  color: #336497;
-  border-radius: 50%;
-  padding: 10px;
   display: block;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #DEEAD6;
+  border-radius: 50%;
   width: 80px;
   height: 80px;
-  margin: 20px auto;
 }
 
 /*
  * Global styling
  */
 
-::after,
-::before {
-  display: inline-block;
-  vertical-align: middle;
-}
+
 :hover {
   transition: .2s ease-in;
 }

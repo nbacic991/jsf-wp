@@ -111,27 +111,27 @@
             </section>
             <section class="footer-top">
                 <div class="featured">
-                    <span aria-hidden="true" class="footer-top-icon icon_wallet"></span>
+                    <span aria-hidden="true" class="footer-top-icon shake-hands"></span>
                     <a>Trust and extate planning</a>
                 </div>
                 <div class="featured">
-                    <span aria-hidden="true" class="footer-top-icon icon_wallet"></span>
+                    <span aria-hidden="true" class="footer-top-icon money"></span>
                     <a>Retirement planning</a>
                 </div>
                 <div class="featured">
-                    <span aria-hidden="true" class="footer-top-icon icon_wallet"></span>
+                    <span aria-hidden="true" class="footer-top-icon budget"></span>
                     <a>Personal budgeting</a>
                 </div>
                 <div class="featured">
-                    <span aria-hidden="true" class="footer-top-icon icon_wallet"></span>
+                    <span aria-hidden="true" class="footer-top-icon umbrella"></span>
                     <a>Risk and task management</a>
                 </div>
                 <div class="featured">
-                    <span aria-hidden="true" class="footer-top-icon icon_wallet"></span>
+                    <span aria-hidden="true" class="footer-top-icon chart"></span>
                     <a>Investment management</a>
                 </div>
                 <div class="featured">
-                    <span aria-hidden="true" class="footer-top-icon icon_wallet"></span>
+                    <span aria-hidden="true" class="footer-top-icon money-location"></span>
                     <a>Charitable contribution planning</a>
                 </div>
             </section>

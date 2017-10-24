@@ -1,25 +1,27 @@
 .hero-bottom {
   position: relative;
-  z-index: 1;
   width: 100%;
   height: 800px;
   margin-bottom: 20px;
   background: url("http://dev.jsf.loc/wp-content/uploads/2017/10/superman2.jpg") no-repeat;
   background-size: cover;
+  &::after {
+    display: block;
+    content: '';
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 100%;
+  }
   .hero-bottom-caption {
-    padding: 10px;
+    padding: 200px 0;
     text-align: center;
+    position: absolute;
     h1,
     button {
       text-transform: uppercase;
     }
     h2 {
-      font-family: Brandon Grotesque;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 34px;
-      color: #336497;
-      margin-bottom: 0;
+     font-size: 34px;
     }
     .date {
       font-family: Brandon Grotesque;
@@ -29,7 +31,7 @@
     .caption {
       font-family: Merriweather;
       color: #333333;
-      font-size: 20px;
+      font-size: 16px;
     }
     button {
       font-family: Brandon Grotesque;
@@ -39,6 +41,7 @@
       border: none;
       width: 150px;
       height: 50px;
+      margin: auto;
       &::after {
         font-family: ElegantIcons;
         content:'\45';

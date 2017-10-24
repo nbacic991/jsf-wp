@@ -1,16 +1,53 @@
+/*
+ * Footer top region
+ */
+
+.footer-top {
+  .featured {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 100px;
+    font-family: Brandon Grotesque;
+    font-weight: bold;
+    font-size: 16px;
+    span {
+      &::before {
+        margin-bottom: 30px;
+      }
+    }
+    a {
+      text-transform: uppercase;
+      color: #929497;
+      cursor: pointer;
+      &:hover {
+        color: #336497;
+      }
+    }
+  }
+}
+
+/*
+ * Footer region
+ */
+
 .site-footer {
   background-color: #346397;
   text-align: center;
   .footer-menus {
+    margin: auto;
+    padding-top: 30px;
     max-width: 1180px;
     width: 100%;
-    margin: auto;
+    .footer-menu {
+      margin-bottom: 50px;
+    }
   }
   .menu-title {
     font-family: Brandon Grotesque;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 12px;
     color: #C9D5E2;
     margin-bottom: 2px;
   }
@@ -40,5 +77,20 @@
       font-size: 12px;
       color: #93C2E2;
     }
+    .info-desc {
+      a {
+        text-transform: none;
+        color: #93C2E2;
+        &:hover {
+          color: #FFF;
+        }
+        &::after {
+          content: '|';
+          display: inline-block;
+          padding-left: 2px;
+        }
+      }
+    }
   }
 }
+
