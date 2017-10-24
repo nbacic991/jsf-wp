@@ -1,0 +1,279 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  margin-bottom: 20px;
+  background: url("http://dev.jsf.loc/wp-content/uploads/2017/10/iStock_000004319094XLarge-1.jpg") no-repeat;
+  background-size: cover;
+  &::after {
+    display: block;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+  }
+  .hero-caption {
+    padding: 100px 0;
+    text-align: center;
+    position: absolute;
+    h1,
+    p {
+      color: $color-white;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    p:nth-of-type(1) {
+      text-transform: uppercase;
+      font-family: Brandon Grotesque;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    a {
+      font-family: Brandon Grotesque;
+      padding: 15px;
+      background-color: #74C1D6;
+      color: #336497;
+      margin: auto;
+      &::after {
+        font-family: ElegantIcons;
+        content:'\45';
+      }
+    }
+  }
+}
+.posts {
+  .title {
+    background-color: $color-white;
+    position: relative;
+    text-align: center;
+    max-width: 360px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    &::after {
+      display: block;
+      position: absolute;
+      content: '';
+      border-bottom: 5px solid #DEEAD6;
+      width: 100%;
+    }
+  }
+  .images {
+    text-align: center;
+    margin-bottom: 50px;
+    img {
+      max-width: 360px;
+      max-height: 250px;
+      width: 100%;
+    }
+    .img-l {
+      p {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #929497;
+        span {
+          color: #7FADD3;
+          font-family: "Brandon Grotesque";
+
+        }
+      }
+    }
+  }
+}
+/*
+ * Sidebar
+ */
+
+aside {
+  width: 100%;
+  margin: auto;
+  .about-author {
+    margin-top: 20px;
+    .short-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .post-date {
+        margin: 0;
+        text-align: left;
+        font-family: Brandon Grotesque;
+        font-weight: bold;
+        color: #7FADD3;
+        font-size: 30px;
+        border-right: 2px solid #666666;
+        padding-right: 5px;
+        span {
+          text-transform: uppercase;
+          color: #999999;
+          font-size: 16px;
+          display: block;
+        }
+      }
+      img {
+        border-radius: 50%;
+        max-width: 50px;
+        width: 100%;
+        max-height: 50px;
+        height: 100%;
+      }
+    }
+    .author-social {
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      img {
+        max-width: 30px;
+        width: 100%;
+        max-height: 30px;
+        height: 100%;
+      }
+    }
+    .author-info {
+      margin-top: 20px;
+      background-color: #f2f2f2;
+      padding: 10px;
+      .about {
+        font-family: Brandon Grotesque;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .name {
+        font-family: Brandon Grotesque;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #346397;
+      }
+      .desc {
+        font-family: Merriweather;
+      }
+    }
+  }
+  .categories,
+  .archives {
+    ul {
+      font-family: Brandon Grotesque;
+      font-weight: bold;
+      font-size: 18px;
+      color: #7FADD3;
+      text-transform: uppercase;
+      list-style-type: none;
+      padding: 0;
+      li:nth-child(1) {
+        margin-top: 30px;
+      }
+      li {
+        position: relative;
+        font-family: Brandon Grotesque;
+        font-weight: bold;
+        font-size: 16px;
+        color: #929497;
+        cursor: pointer;
+        border-bottom: 2px solid #999999;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        &:hover {
+          color: #336497;
+        }
+        &:after {
+          position: absolute;
+          right: 0;
+          font-family: ElegantIcons;
+          display: inline-block;
+          content: "\35";
+        }
+      }
+    }
+  }
+  .tag-cloud {
+    ul {
+      font-family: Brandon Grotesque;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #7FADD3;
+      padding: 0;
+      li {
+        display: inline-block;
+        text-transform: uppercase;
+        list-style-type: none;
+        border: 2px solid #DDDDDD;
+        color: #999999;
+        padding: 5px 10px;
+        margin: 5px;
+        &:hover {
+          cursor: pointer;
+          border-color: #346397;
+        }
+      }
+    }
+  }
+}
+
+.resource-center-highlights {
+  .title {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    width: 360px;
+    margin: 0 auto 20px auto;
+    padding-bottom: 25px;
+    &::after {
+      display: block;
+      position: absolute;
+      bottom: 6px;
+      content: '';
+      border-bottom: 5px solid #DEEAD6;
+      width: 100%;
+    }
+    p,a {
+      z-index: 1;
+      background-color: #fff;
+      color: #7FADD3;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    p {
+      margin-bottom: 15px;
+      font-family: Brandon Grotesque;
+      font-size: 18px;
+    }
+    a {
+      font-size: 16px;
+      &::after {
+        font-family: ElegantIcons;
+        content: '\45';
+      }
+    }
+  }
+  .center-highlight {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    img {
+      max-width: 360px;
+      max-height: 264px;
+      width: 100%;
+      height: 100%;
+    }
+    p {
+      font-family: 'Merriweather', serif;
+      font-size: 16px;
+      color: #333333;
+    }
+    a {
+      font-family: Brandon Grotesque;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #7FADD3;
+      &::after {
+        font-family: ElegantIcons;
+        content: '\45';
+        display: inline-block;
+      }
+    }
+  }
+}
