@@ -70,12 +70,21 @@
 .single-team-member {
   .highlighted {
     text-transform: uppercase;
-    background-color: lightgray;
-    color: #666666;
+    background-color: $color-gray;
     text-align: left;
-    h1 {
-      padding: 20px 0 20px 10px;
+    p {
+      text-align: center;
+      margin: 0;
+      font-family: Brandon Grotesque;
+      font-weight: bold;
+      font-size: 25px;
+      padding: 20px 0;
     }
+  }
+  .wrapper {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
   }
   .member-photo {
     max-width: 400px;
@@ -88,8 +97,8 @@
     }
   }
   .member-info {
-    width: 500px;
     padding: 10px;
+    margin: auto;
     h1 {
       font-family: Brandon Grotesque;
       font-size: 18px;

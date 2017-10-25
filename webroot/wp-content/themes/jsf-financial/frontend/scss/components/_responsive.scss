@@ -249,6 +249,50 @@
       }
     }
 
+    .single-team-member {
+      .wrapper {
+        p {
+          text-align: left;
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            left:0;
+            top: 77px;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 40px solid $color-gray;
+          }
+        }
+      }
+      .member-wrapper {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        max-width: 1180px;
+        width: 100%;
+        a {
+          position: absolute;
+          right: 0;
+          bottom: 10px;
+        }
+      }
+      .member-photo {
+        margin-top: -77px;
+      }
+      .member-info {
+        margin-top: 50px;
+        width: 500px;
+        h1 {
+          font-size: 48px;
+        }
+        h1,
+        p {
+          text-align: left;
+        }
+      }
+    }
   }
 
 }
