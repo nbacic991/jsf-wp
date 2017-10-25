@@ -132,7 +132,8 @@
   }
 
   .main-post-content {
-    .posts {
+    .posts,
+    .post {
       width: 65%;
       float: left;
       clear: left;
@@ -288,7 +289,8 @@
     }
   }
   .main-post-content {
-    .posts {
+    .posts,
+    .post {
       .title {
         text-align: left;
         max-width: 100%;
@@ -299,6 +301,12 @@
           z-index: -1;
         }
       }
+    }
+    .post h1 {
+      font-size: 48px;
+    }
+    aside {
+      margin-top: 10px;
     }
     .img-l {
       float: left;
