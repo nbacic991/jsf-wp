@@ -6,4 +6,5 @@
             directionNav: false
         });
     });
+
 })(jQuery)

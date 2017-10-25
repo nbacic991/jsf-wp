@@ -33,7 +33,7 @@
             </div>
         </div>
 		<div class="site-info">
-            <img src="http://via.placeholder.com/300x100" alt="footer logo" />
+            <img src="http://svgshare.com/i/3_w.svg" alt="footer logo" />
             <div class="info-desc">
                 <p>Securities are offered through Mid Atlantic Capitol Corporation ("MACC") a registered broker dealer,
                     Member FINRA/SIPC. </p>

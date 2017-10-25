@@ -12,23 +12,34 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    height: 300px !important;
+    &::after {
+      background: url('img/SVG/home-hero-bg') !important;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
     .flex-caption {
       flex-basis: 40%;
-      width: 40%;
       position: absolute;
       top: 10px;
       left: 10%;
       text-transform: uppercase;
-      color: #FFF;
       p {
-        font-size: 60px;
+        font-family: Brandon Grotesque;
+        font-weight: bold;
+        text-align: center;
+        font-size: 30px;
+        color: #FFF;
         margin-bottom: 0;
       }
       button {
         font-family: Brandon Grotesque;
         font-weight: bold;
         font-size: 14px;
-        margin-top: 50px;
+        margin: 50px auto auto auto;
         background-color: #DEEAD6;
         color: #336497;
         border: none;
@@ -41,6 +52,7 @@
       }
     }
     .flex-image {
+      display: none;
       flex-basis: 50%;
       padding: 5px;
       position: absolute;

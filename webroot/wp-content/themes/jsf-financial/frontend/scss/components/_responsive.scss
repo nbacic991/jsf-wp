@@ -1,11 +1,14 @@
 
 @media (min-width: 770px) {
 
+
+
   /* Home page */
 
   .site-header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
   .main-content {
     display: flex;
@@ -119,6 +122,7 @@
     .site-info {
       display: flex;
       justify-content: space-around;
+      align-items: center;
       .info-desc {
         p, a {
           text-align: left;
@@ -150,6 +154,56 @@
 @media (min-width: 1024px) {
 
   .site {
+    .site-header {
+      button {
+        display: none;
+      }
+      .main-navigation {
+        .custom-menu-class {
+          text-align: right;
+        }
+        .menu {
+          display: inline-block;
+          margin: 0;
+          li {
+            display: inline-block;
+            position: relative;
+            margin: 0;
+            &:hover {
+              ul {
+                display: block;
+                position: absolute;
+                margin-top: 20px;
+                z-index: 1;
+                padding: 0;
+                background-color: #DEEAD6;
+                &::before {
+                  position: absolute;
+                  display: block;
+                  content: '';
+                  left: 10%;
+                  top: -30px;
+                  border-left: 20px solid transparent;
+                  border-right: 20px solid transparent;
+                  border-bottom: 30px solid #DEEAD6;
+                }
+                li {
+                  margin: 0;
+                  padding: 10px 20px;
+                  display: block;
+                  width: 250px;
+                  text-align: left;
+                  a {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
     .main-content {
       .main-content-left,
       .main-content-right {
@@ -298,6 +352,21 @@
 }
 
 @media (min-width: 1180px) {
+  .slides {
+    li {
+      height: 650px !important;
+      .flex-caption {
+        width: 40%;
+        p {
+          font-size: 60px;
+          text-align: left;
+        }
+      }
+      .flex-image {
+        display: block;
+      }
+    }
+  }
 
   .site-header {
     justify-content: space-between;

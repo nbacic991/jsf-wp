@@ -3,6 +3,16 @@
   background-color: #346397;
   padding: 100px 5px;
   text-align: center;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    background: url('img/SVG/home-hero-bg.svg');
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
   .left {
     h1 {
       color: $color-white;

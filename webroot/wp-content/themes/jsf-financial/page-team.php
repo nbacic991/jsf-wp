@@ -9,7 +9,7 @@
                     innovative wealth management and planning solutions - now and for the future.</p>
             </div>
             <div class="right">
-                <img src="http://via.placeholder.com/500x500" alt="">
+                <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/team.jpg" alt="" style="height: 500px;">
             </div>
         </div>
     </section>
@@ -17,31 +17,31 @@
 <section class="team-members">
     <div class="team-founders">
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Jeff-Fishman-JSF-e1366915309707-280x350.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
         </div>
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Olivier-Cornet1-e1366919417987-280x350.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
         </div>
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Boris-copy-1-280x350.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
         </div>
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Brian-copy-1-280x350.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
         </div>
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Don-Peck-e1366915812307-280x3501.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
@@ -55,25 +55,25 @@
     </div>
     <div class="team-management">
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Olivier-Cornet1-e1366919417987-280x350.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
         </div>
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Boris-copy-1-280x350.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
         </div>
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Brian-copy-1-280x350.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
         </div>
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Don-Peck-e1366915812307-280x3501.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
@@ -83,30 +83,29 @@
         <div class="inner">
             <h2>Business Operations</h2>
             <p>In creating a financial plan, JSF wealth managers focus on both short-term financial needs and long term goals, taking a global view of each client's financial life.</p>
-
         </div>    
     </div>
     <div class="team-bussines">
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Olivier-Cornet1-e1366919417987-280x350.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
         </div>
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Boris-copy-1-280x350.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
         </div>
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Brian-copy-1-280x350.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
         </div>
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Don-Peck-e1366915812307-280x3501.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
@@ -121,25 +120,25 @@
     </div>
     <div class="team-account">
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Olivier-Cornet1-e1366919417987-280x350.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
         </div>
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Boris-copy-1-280x350.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
         </div>
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Brian-copy-1-280x350.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
         </div>
         <div class="team-member">
-            <img src="http://via.placeholder.com/130x130" alt="team member">
+            <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Don-Peck-e1366915812307-280x3501.jpg" alt="team member">
             <h3>Jeff Fishman</h3>
             <p>Founder &amp; managing memeber/</p>
             <p>Investment Advisor Representative</p>
