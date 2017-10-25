@@ -15,79 +15,58 @@ get_header();
             <a href="#">Read more</a>
         </div>
     </section>
-    <div class="posts">
-        <h2 class="title">What's trending</h2>
-        <div class="images">
-            <div class="img-l">
-                <img src="http://via.placeholder.com/360x250" alt="">
-                <p><span>23</span> November</p>
+    <div class="main-post-content">
+        <div class="posts">
+            <h2 class="title">What's trending</h2>
+            <div class="images">
+                <div class="img-l">
+                    <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/tough-growth.jpg" alt="">
+                    <p><span>08</span> September</p>
+                </div>
+                <div class="img-r">
+                    <h2>Los Angeles county in smallest short-term issue since '08</h2>
+                    <p>By <span class="by">Sam Sekine</span> in <span class="by">estate planning</span></p>
+                    <p class="short-desc">Los Angeles County is poised to borrow $900 million in its smallest sale
+                        of short-term notes since 2008, signaling the financial recovery of the nation's
+                        most-populous conty.</p>
+                    <a href="#">Read more</a>
+                </div>
             </div>
-            <div class="img-r">
-                <h2>Los Angeles county in smallest short-term issue since '08</h2>
-                <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed porta porttitor. Phasellus fermentum lorem magna, vel mattis metus convallis in. Aliquam molestie dui id dui egestas, quis tempor orci efficitur. Quisque tincidunt consequat justo a egestas. </p>
-                <a href="#">Read more</a>
+            <div class="images">
+                <div class="img-l">
+                    <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Depositphotos_11629572_original.jpg" alt="">
+                    <p><span>08</span> September</p>
+                </div>
+                <div class="img-r">
+                    <h2>It's not all about you</h2>
+                    <p>By <span class="by">Jeff Fishman</span> in <span class="by">practice management</span></p>
+                    <p class="short-desc">Jeff Fishman, a financial advisor in Los Angeles, started his firm in 1995
+                        and was feeling pretty good about where it was going for the first decade or so. Originally a
+                        lawyer, he'd built up a name for himself in tax and estate planning, but seemed to hit a wall
+                        about five years ago. His success was a double-edged sword.
+                    </p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="images">
+                <div class="img-l">
+                    <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/piggy.jpg" alt="">
+                    <p><span>08</span> September</p>
+                </div>
+                <div class="img-r">
+                    <h2>When financial disaster hits home</h2>
+                    <p>By <span class="by">Brian Mercado</span> in <span class="by">investing</span></p>
+                    <p class="short-desc">It's been a little more than a year since Superstorm Sandy devastated
+                        large swaths of the East Coast, killing at least 182 people in the U.S. and doing $65
+                        billion in damage. It's been two months since flash floods.</p>
+                    <a href="#">Read more</a>
+                </div>
             </div>
         </div>
-        <div class="images">
-            <div class="img-l">
-                <img src="http://via.placeholder.com/360x250" alt="">
-                <p><span>23</span> November</p>
-            </div>
-            <div class="img-r">
-                <h2>Los Angeles county in smallest short-term issue since '08</h2>
-                <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed porta porttitor. Phasellus fermentum lorem magna, vel mattis metus convallis in. Aliquam molestie dui id dui egestas, quis tempor orci efficitur. Quisque tincidunt consequat justo a egestas. </p>
-                <a href="#">Read more</a>
-            </div>
-        </div>
-        <div class="images">
-            <div class="img-l">
-                <img src="http://via.placeholder.com/360x250" alt="">
-                <p><span>23</span> November</p>
-            </div>
-            <div class="img-r">
-                <h2>Los Angeles county in smallest short-term issue since '08</h2>
-                <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed porta porttitor. Phasellus fermentum lorem magna, vel mattis metus convallis in. Aliquam molestie dui id dui egestas, quis tempor orci efficitur. Quisque tincidunt consequat justo a egestas. </p>
-                <a href="#">Read more</a>
-            </div>
-        </div>
+
+	    <?php get_sidebar() ?>
     </div>
-    <aside>
-        <div class="categories">
-            <ul>Categories
-                <li>Charitable giving</li>
-                <li>Culture</li>
-                <li>Estate planning</li>
-                <li>Financial advisors</li>
-                <li>Investing</li>
-                <li>Other</li>
-                <li>Worth sharing</li>
-            </ul>
-        </div>
-        <div class="archives">
-            <ul>Archives
-                <li>March 2017</li>
-                <li>January 2017</li>
-                <li>December 2016</li>
-                <li>November 2016</li>
-                <li>September 2016</li>
-            </ul>
-        </div>
-        <div class="tag-cloud">
-            <ul>Tag cloud
-                <li>Financial</li>
-                <li>Investors</li>
-                <li>Capital</li>
-                <li>Planning</li>
-                <li>Real-estate</li>
-                <li>News</li>
-                <li>Import</li>
-                <li>United states</li>
-                <li>Stock</li>
-                <li>Personal advisors</li>
-                <li>Foreign markets</li>
-            </ul>
-        </div>
-    </aside>
+
     <div class="resource-center-highlights">
         <div class="title">
             <p>Resource center highlights</p>
