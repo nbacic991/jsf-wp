@@ -8,7 +8,7 @@
   &::after {
     display: block;
     content: '';
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     position: absolute;
     top: 0;
     right: 0;
@@ -32,6 +32,10 @@
       text-transform: uppercase;
       font-family: Brandon Grotesque;
     }
+    p:nth-of-type(2) {
+      font-weight: normal;
+      line-height: 30px;
+    }
     h1 {
       font-size: 30px;
     }
@@ -45,6 +49,7 @@
       &::after {
         font-family: ElegantIcons;
         content:'\45';
+        margin-left: 10px;
       }
     }
   }
@@ -180,7 +185,19 @@
           color: #7FADD3;
         }
       }
-
+      p {
+        line-height: 30px;
+      }
+      h2 {
+        a {
+          font-size: 34px;
+          color: #346397;
+          &::before,
+          &::after {
+            display: none;
+          }
+        }
+      }
       a {
         color: #7FADD3;
         font-weight: bold;

@@ -84,6 +84,14 @@ if ( ! function_exists( 'jsf_financial_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+    // Add Thumbnail Theme Support
+    add_theme_support('post-thumbnails');
+    // add_image_size('large', 700, '', true); // Large Thumbnail
+    // add_image_size('medium', 250, '', true); // Medium Thumbnail
+    // add_image_size('small', 120, '', true); // Small Thumbnail
+    // add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('archive-size', 360, '', true);
 	}
 endif;
 add_action( 'after_setup_theme', 'jsf_financial_setup' );
@@ -122,7 +130,6 @@ add_action( 'widgets_init', 'jsf_financial_widgets_init' );
  * Enqueue scripts and styles.
  */
 function jsf_financial_scripts() {
-
 	wp_enqueue_style( 'jsf-financial-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'jsf-financial-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -131,9 +138,6 @@ function jsf_financial_scripts() {
 
 	wp_enqueue_script( 'js-flexslider-init', get_template_directory_uri() . '/js/flexslider-init.js', array(jquery), '1', true );
 
-	wp_enqueue_script( 'jsf-financial-custom', get_template_directory_uri() . '/js/custom.js', array(),
-		'5',	true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -141,7 +145,7 @@ function jsf_financial_scripts() {
 add_action( 'wp_enqueue_scripts', 'jsf_financial_scripts' );
 
 
-// Load Elixir Zorka styles
+// Load jsf finantial styles
 function jsf_financial_styles()
 {
     wp_register_style('css-flexslider', get_template_directory_uri() . '/css/flexslider.css', array(), '1.0', 'all');
@@ -150,6 +154,51 @@ function jsf_financial_styles()
 
 }
 add_action('wp_enqueue_scripts', 'jsf_financial_styles'); // Add Theme 
+
+
+/*------------------------------------*\
+	Custom Post Types
+\*------------------------------------*/
+
+// Create 1 Custom Post type
+function create_post_type_resource_center()
+{
+    register_post_type('resource-centers', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => 'Resource center', // Rename these to suit
+            'singular_name' => 'Resource center',
+            'add_new' => 'Add New',
+            'add_new_item' => 'Add New Resource center',
+            'edit' => 'Edit',
+            'edit_item' => 'Edit Resource center',
+            'new_item' => 'New Resource center',
+            'view' => 'View Resource center',
+            'view_item' => 'View Resource center',
+            'search_items' => 'Search Resource center',
+            'not_found' => 'No Resource center found',
+            'not_found_in_trash' => 'No Resource center found in Trash'
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => false,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail',
+            'author',
+            'comments'
+        ),
+        'can_export' => true, // Allows export in Tools > Export
+        'menu_icon'  => 'dashicons-groups',
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+}
+add_action('init', 'create_post_type_resource_center'); // Add our jsf_financial Custom Post Type
 /**
  * Implement the Custom Header feature.
  */

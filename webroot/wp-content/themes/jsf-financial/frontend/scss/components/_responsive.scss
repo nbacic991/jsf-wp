@@ -134,7 +134,7 @@
 
   .main-post-content {
     .posts,
-    .post {
+    .post-article {
       width: 65%;
       float: left;
       clear: left;
@@ -155,6 +155,7 @@
       #primary-menu {
         top: 120px;
         width: 250px;
+        z-index: 9999999999;
       }
       #primary-menu,
       #menu-main-nav-top {
@@ -206,8 +207,8 @@
               ul {
                 display: block;
                 position: absolute;
-                left: -60px;
-                margin-top: 10px;
+                right: -90px;
+                margin-top: 15px;
                 z-index: 1;
                 padding: 0;
                 background-color: #DEEAD6;
@@ -229,7 +230,6 @@
                   text-align: center;
                   a {
                     color: #336497;
-                    font-size: 13px;
                   }
                 }
               }
@@ -438,7 +438,7 @@
   }
   .main-post-content {
     .posts,
-    .post {
+    .post-article {
       .title {
         text-align: left;
         max-width: 100%;
@@ -450,7 +450,7 @@
         }
       }
     }
-    .post h1 {
+    .post-article h1 {
       font-size: 48px;
     }
     aside {
