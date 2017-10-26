@@ -25,6 +25,17 @@
       font-size: 18px;
       padding: 15px;
     }
+    #menu-main-nav-top {
+      padding-bottom: 10px;
+      li:nth-child(1) {
+        &::before {
+          font-family: ElegantIcons;
+          content:'\45';
+          display: inline-block;
+          color: #929497;
+        }
+      }
+    }
     .menu {
       display: none;
       list-style-type: none;
@@ -36,7 +47,7 @@
         font-weight: bold;
         font-size: 16px;
         color: #929497;
-        padding: 0 10px 0 0;
+        padding: 15px 10px;
         margin:  0;
         &:hover {
           color: #336497;

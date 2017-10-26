@@ -29,7 +29,7 @@
                     <button>Learn more</button>
                 </div>
                 <div class="flex-image">
-                    <img src="http://dev.jsf.loc/jsf-financial/wp-content/uploads/2017/10/Depositphotos_13512336_original-wheat-crop.jpg" alt="some photo">
+                    <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Depositphotos_13512336_original-wheat-crop.jpg" alt="some photo">
                 </div>
             </li>
             <li>
@@ -38,7 +38,7 @@
                     <button>Learn more</button>
                 </div>
                 <div class="flex-image">
-                    <img src="http://dev.jsf.loc/jsf-financial/wp-content/uploads/2017/10/Depositphotos_13512336_original-wheat-crop.jpg" alt="some photo">
+                    <img src="http://dev.jsf.loc/wp-content/uploads/2017/10/Depositphotos_13512336_original-wheat-crop.jpg" alt="some photo">
                 </div>
             </li>
         </ul>

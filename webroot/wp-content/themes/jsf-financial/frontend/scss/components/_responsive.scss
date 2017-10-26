@@ -1,7 +1,4 @@
-
 @media (min-width: 770px) {
-
-
 
   /* Home page */
 
@@ -150,6 +147,40 @@
   }
 
 }
+@media (max-width: 1024px) {
+
+  .site-header {
+    .main-navigation {
+      position: relative;
+      #primary-menu {
+        top: 120px;
+        width: 250px;
+      }
+      #primary-menu,
+      #menu-main-nav-top {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      #menu-main-nav-top {
+        top: 50px;
+        z-index: 1;
+        width: 250px;
+      }
+      .menu {
+        z-index: 1;
+        background-color: #DEEAD6;
+        position: absolute;
+        li {
+          margin: 5px 0;
+        }
+        a {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+}
 
 @media (min-width: 1024px) {
 
@@ -164,7 +195,9 @@
         }
         .menu {
           display: inline-block;
+          text-align: right;
           margin: 0;
+          width: 100%;
           li {
             display: inline-block;
             position: relative;
@@ -173,7 +206,8 @@
               ul {
                 display: block;
                 position: absolute;
-                margin-top: 20px;
+                left: -60px;
+                margin-top: 10px;
                 z-index: 1;
                 padding: 0;
                 background-color: #DEEAD6;
@@ -181,19 +215,20 @@
                   position: absolute;
                   display: block;
                   content: '';
-                  left: 10%;
-                  top: -30px;
-                  border-left: 20px solid transparent;
-                  border-right: 20px solid transparent;
-                  border-bottom: 30px solid #DEEAD6;
+                  left: 40%;
+                  top: -15px;
+                  border-left: 15px solid transparent;
+                  border-right: 15px solid transparent;
+                  border-bottom: 15px solid #DEEAD6;
                 }
                 li {
                   margin: 0;
-                  padding: 10px 20px;
+                  padding: 10px 0;
                   display: block;
                   width: 250px;
-                  text-align: left;
+                  text-align: center;
                   a {
+                    color: #336497;
                     font-size: 13px;
                   }
                 }
