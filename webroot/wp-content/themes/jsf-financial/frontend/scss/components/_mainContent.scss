@@ -8,16 +8,18 @@
     display: block;
     font-family: Brandon Grotesque;
     font-weight: bold;
-    font-size: 27px;
-    color: #346397;
     margin-top: 0;
+    a {
+      font-size: 28px;
+      color: #346397;
+    }
   }
   p {
     font-family: Merriweather;
+    line-height: 25px;
     font-size: 16px;
     color: #333333;
   }
-  .read,
   .learn {
     font-family: Brandon Grotesque;
     font-weight: bold;

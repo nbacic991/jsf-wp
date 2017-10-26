@@ -15,15 +15,15 @@
     padding: 200px 0;
     text-align: center;
     position: absolute;
-    h1,
-    button {
-      text-transform: uppercase;
-    }
     h2 {
-      font-size: 34px;
+      a {
+        font-size: 34px;
+        color: #336497;
+      }
     }
     .date {
       font-family: Brandon Grotesque;
+      text-transform: uppercase;
       font-weight: bold;
       font-size: 12px;
     }
@@ -31,19 +31,24 @@
       font-family: Merriweather;
       color: #333333;
       font-size: 16px;
+      line-height: 30px;
     }
-    button {
-      font-family: Brandon Grotesque;
-      font-weight: bold;
-      background-color: #74C1D6;
-      color: #336497;
-      border: none;
-      width: 150px;
-      height: 50px;
-      margin: auto;
-      &::after {
-        font-family: ElegantIcons;
-        content:'\45';
+    .link {
+      margin-top: 50px;
+      a {
+        margin: auto;
+        padding: 15px 20px;
+        font-family: Brandon Grotesque;
+        font-weight: bold;
+        background-color: #74C1D6;
+        color: #336497;
+        border: none;
+        width: 150px;
+        height: 50px;
+        &::after {
+          font-family: ElegantIcons;
+          content:'\45';
+        }
       }
     }
   }

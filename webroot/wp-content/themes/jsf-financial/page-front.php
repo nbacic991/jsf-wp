@@ -58,7 +58,7 @@
                 <div class="main-content-left">
                     <img src="<?php echo $static_block_left_image['url']; ?>" alt="<?php echo $static_block_left_image['alt'] ?>" />
                     <div class="post-info">
-                        <h2 class="link"><a class="learn" href="<?php echo $static_block_left_button_url; ?>"><?php echo $static_block_left_title; ?></a></h2>
+                        <h2 class="link"><a href="<?php echo $static_block_left_button_url; ?>"><?php echo $static_block_left_title; ?></a></h2>
                         <p><?php echo $static_block_left_description; ?></p>
                         <a class="learn" href="<?php echo $static_block_left_button_url; ?>"><?php echo $static_block_left_button_text; ?></a>
                     </div>
@@ -88,7 +88,7 @@
                             <!-- <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"> -->
                             <?php the_post_thumbnail(); // Fullsize image for the single post ?>
                             <p><?php the_title(); ?></p>
-                            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a>
+                            <a class="link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a>
                         </div>
                     <!-- /article -->
 
@@ -113,7 +113,8 @@
                  
                 <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 
-            <section class="hero-bottom" style="background: url('<?php the_post_thumbnail_url(); ?>') no-repeat;">
+            <section class="hero-bottom" style="background: url('<?php the_post_thumbnail_url(); ?>') no-repeat;
+                    background-size: cover;">
                 <!-- article -->
                 <div  id="post-<?php the_ID(); ?>" <?php post_class( 'hero-bottom-caption' ); ?>>
 
@@ -129,7 +130,9 @@
 
                     <p class="caption"><?php echo the_content(''); ?></p>
 
-                    <a href="<?php echo get_permalink(); ?>">Read more</a>
+                    <div class="link">
+                        <a href="<?php echo get_permalink(); ?>">Read more</a>
+                    </div>
 
                 <!-- /article -->
                  
