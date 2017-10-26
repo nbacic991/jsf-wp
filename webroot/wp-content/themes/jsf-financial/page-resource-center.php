@@ -17,10 +17,9 @@ get_header();
         </div>
     </div>
     <div class="main-post-content">
-        <div class="top">
 
             <div class="posts">
-                <h1 class="title">What's trending</h1>
+                <h2 class="title">What's trending</h2>
                 <?php $the_custom_post_query = new WP_Query( array( 'post_type' => 'resource-centers', 'order'   => 'ASC', 'posts_per_page' => 3 ) ); ?>
                 <?php if ( $the_custom_post_query->have_posts() ) : ?>
 
@@ -55,8 +54,31 @@ get_header();
 
                 <?php endif; ?>
             </div>
-            <?php get_sidebar(); ?>
-        </div>
+            <div class="posts-right">
+                <div class="about-author">
+                    <div class="short-info">
+                        <p class="post-date">23 <span>November</span></p>
+                        <div class="author-img">
+                            <img src="http://via.placeholder.com/50x50" alt="">
+                        </div>
+                    </div>
+                    <div class="author-social">
+                        <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
+                        <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
+                        <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
+                        <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
+                        <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
+                    </div>
+                    <div class="author-info">
+                        <p class="about">About the author</p>
+                        <p class="name">Sam Sekine</p>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed
+                            porta porttitor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed
+                            porta porttitor.</p>
+                    </div>
+                </div>
+	            <?php get_sidebar(); ?>
+            </div>
     </div>
     <section class="resource-center-highlights">
         <div class="title">

@@ -34,7 +34,6 @@
     }
     p:nth-of-type(2) {
       font-weight: normal;
-      line-height: 30px;
     }
     h1 {
       font-size: 30px;
@@ -49,7 +48,6 @@
       &::after {
         font-family: ElegantIcons;
         content:'\45';
-        margin-left: 10px;
       }
     }
   }
@@ -354,6 +352,64 @@
         content: '\45';
         display: inline-block;
       }
+    }
+  }
+}
+
+.about-author {
+  .short-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .post-date {
+      text-align: left;
+      border-right: 2px solid black;
+      padding-right: 25px;
+      span {
+        display: block;
+      }
+    }
+    .author-img {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      overflow: hidden;
+      width: 50px;
+      height: 50px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .author-social {
+    display: flex;
+    justify-content: space-between;
+    img {
+      max-width: 50px;
+      width: 50px;
+    }
+  }
+  .author-info {
+    background-color: $color-gray;
+    margin: 50px 0;
+    padding: 10px;
+    width: 100%;
+    .about {
+      text-transform: uppercase;
+      font-family: Brandon Grotesque;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .name {
+      text-transform: uppercase;
+      font-family: Brandon Grotesque;
+      font-size: 16px;
+      font-weight: bold;
+      color: #336497;
+    }
+    .desc {
+      line-height: 25px;
+      padding-right: 10px;
     }
   }
 }
