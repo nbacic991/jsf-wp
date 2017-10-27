@@ -1,3 +1,9 @@
+
+
+.menu-menu-1-container {
+  display: inline-block;
+}
+
 .menu-item-has-children {
   ul {
     a {
@@ -23,7 +29,7 @@
     }
   }
   .main-navigation {
-    button {
+    .menu-toggle {
       margin: auto;
       border-radius: 4px;
       background-color: #3498db;

@@ -175,10 +175,11 @@
       }
     }
     .img-r {
-      p:nth-of-type(1) {
+      .author {
+        font-size: 12px;
         font-family: Brandon Grotesque;
-        font-weight: bold;
         text-transform: uppercase;
+        font-weight: bold;
         .by {
           color: #7FADD3;
         }
