@@ -9,7 +9,9 @@
                 <?php while ( have_posts() ) : the_post();?>
                 <p class="authored-by">By <span><?php the_author_posts_link(); ?></span> on <?php the_time('j F'); ?> in <span><?php the_category(', '); ?></span></p>
 
-				<?php the_content(); ?>
+                <span class="text">
+				    <?php the_content(); ?>
+                </span>
 
 				<?php endwhile; // End of the loop. ?>
             </div>
