@@ -125,10 +125,10 @@
                     <!-- /post title -->
 
                     <!-- post details -->
-                    <p class="date"><?php the_time('j F Y'); ?></p>
+                    <span class="date"><?php the_time('j F Y'); ?></span>
                     <!-- /post details -->
 
-                    <p class="caption"><?php echo the_content(''); ?></p>
+                    <span class="caption"><?php echo the_content(''); ?></span>
 
                     <div class="link">
                         <a href="<?php echo get_permalink(); ?>">Read more</a>
