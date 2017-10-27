@@ -9,7 +9,7 @@
                     innovative wealth management and planning solutions - now and for the future.</p>
             </div>
             <div class="right">
-                <img src="<?php bloginfo('template_directory'); ?>/img/team.jpg" alt="" style="height: 500px;">
+                <img src="<?php bloginfo('template_directory'); ?>/img/team.jpg" alt="" style="height: 550px;">
             </div>
         </div>
     </section>
