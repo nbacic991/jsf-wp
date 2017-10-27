@@ -13,137 +13,65 @@
             </div>
         </div>
     </section>
+    <!-- Start Repeater -->
+    <!-- <?php global $post; ?> -->
+    <?php if( have_rows('team_repeater')): // check for repeater fields ?>
 
     <section class="team-members">
-        <div class="team-founders">
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Jeff-Fishman-JSF-e1366915309707-280x350.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Olivier-Cornet1-e1366919417987-280x350.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Boris-copy-1-280x350.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Brian-copy-1-280x350.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Don-Peck-e1366915812307-280x3501.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-        </div>
-        <div class="gray-box">
-            <div class="inner">
-                <h2>Investment management</h2>
-                <p>At JSF, the investment management process follows a multi step consultative approach designed to develop customized investment strategies that incorporate our client's personal needs and objectives.</p>
-            </div>
-        </div>
-        <div class="team-management">
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Olivier-Cornet1-e1366919417987-280x350.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Boris-copy-1-280x350.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Brian-copy-1-280x350.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Don-Peck-e1366915812307-280x3501.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-        </div>
-        <div class="gray-box">
-            <div class="inner">
-                <h2>Business Operations</h2>
-                <p>In creating a financial plan, JSF wealth managers focus on both short-term financial needs and long term goals, taking a global view of each client's financial life.</p>
-            </div>
-        </div>
-        <div class="team-bussines">
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Olivier-Cornet1-e1366919417987-280x350.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Boris-copy-1-280x350.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Brian-copy-1-280x350.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Don-Peck-e1366915812307-280x3501.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-        </div>
-        <div class="gray-box">
-            <div class="inner">
-                <h2>Account Operations</h2>
-                <p>In creating a financial plan, JSF wealth managers focus on both short-term financial needs and long term goals, taking a global view of each client's financial life.</p>
+        
 
+        <?php while ( have_rows('team_repeater')) : the_row(); // loop through the repeater fields ?>
+
+        <?php // set up post object and vars
+            $post_object = get_sub_field('select_team_in_this_section');
+
+            $team_add_sector = get_sub_field('team_add_sector');
+            $team_sector_title = get_sub_field('team_sector_title');
+            $team_sector_description = get_sub_field('team_sector_description');
+        ?>
+
+        <?php if( $team_add_sector): ?>
+           
+            <div class="gray-box">
+                <div class="inner">
+                    <h2><?php echo $team_sector_title ?></h2>
+                    <p><?php echo $team_sector_description ?></p>
+                </div>
             </div>
+            
+        <?php endif; ?>
+
+
+        
+        <div class="team-management">
+
+            <?php foreach( $post_object as $post): // variable must be called $post (IMPORTANT) ?>
+                <?php setup_postdata($post); ?>
+
+                <div class="team-member">
+                    <?php the_post_thumbnail(); // Fullsize image for the single post ?>
+                    <h3><?php the_title(); ?></h3>
+                    <p>
+                        <?php
+                        $terms = get_the_terms( $post->ID , 'teams_positions' );
+                        foreach ( $terms as $term ) {
+                            echo $term->name;
+                        }
+                        ?>
+                    </p>
+                </div>
+
+            <?php endforeach; ?>
+
         </div>
-        <div class="team-account">
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Olivier-Cornet1-e1366919417987-280x350.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Boris-copy-1-280x350.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Brian-copy-1-280x350.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-            <div class="team-member">
-                <img src="<?php bloginfo('template_directory'); ?>/img/Don-Peck-e1366915812307-280x3501.jpg" alt="team member">
-                <h3>Jeff Fishman</h3>
-                <p>Founder &amp; managing memeber/</p>
-                <p>Investment Advisor Representative</p>
-            </div>
-        </div>
+
+        <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+
+
+        <?php endwhile; ?>
+
     </section>
+    <!-- End Repeater -->
+    <?php endif; ?>
 
 <?php get_footer(); ?>

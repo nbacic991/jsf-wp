@@ -138,6 +138,9 @@ function jsf_financial_scripts() {
 
 	wp_enqueue_script( 'js-flexslider-init', get_template_directory_uri() . '/js/flexslider-init.js', array(jquery), '1', true );
 
+	wp_enqueue_script( 'jsf-financial-custom', get_template_directory_uri() . '/js/custom.js', array(),
+		'2',	true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -198,7 +201,52 @@ function create_post_type_resource_center()
         ) // Add Category and Post Tags support
     ));
 }
-add_action('init', 'create_post_type_resource_center'); // Add our jsf_financial Custom Post Type
+add_action('init', 'create_post_type_resource_center'); // Add our 
+
+function create_post_type_team()
+{
+		register_taxonomy(  
+	    'teams_positions',  
+	    'teams',  // this is the custom post type(s) I want to use this taxonomy for
+	    array(  
+	        'hierarchical' => true,  
+	        'label' => 'Teams Positions',  
+	        'query_var' => true,  
+	        'rewrite' => true  
+	    )
+	  );
+    register_post_type('teams', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => 'Team members', // Rename these to suit
+            'singular_name' => 'Team members',
+            'add_new' => 'Add New',
+            'add_new_item' => 'Add New Team member',
+            'edit' => 'Edit',
+            'edit_item' => 'Edit Team member',
+            'new_item' => 'New Team member',
+            'view' => 'View Team member',
+            'view_item' => 'View Team member',
+            'search_items' => 'Search Team members',
+            'not_found' => 'No Team member found',
+            'not_found_in_trash' => 'No Team member found in Trash'
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => false,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail',
+            'author',
+            'comments'
+        ),
+        'can_export' => true, // Allows export in Tools > Export
+        'menu_icon'  => 'dashicons-businessman'
+    ));
+}
+add_action('init', 'create_post_type_team'); // Add our jsf_financial Custom Post Type
 /**
  * Implement the Custom Header feature.
  */

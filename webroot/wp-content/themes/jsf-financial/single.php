@@ -20,18 +20,21 @@
             </div>
 
         </div>
-        <aside>
-            <!-- <div class="about-author">
+        
+        <div class="posts-right">
+            <div class="about-author">
                 <div class="short-info">
                     <p class="post-date">23 <span>November</span></p>
-                    <img src="http://via.placeholder.com/50x50" alt="">
+                    <div class="author-img">
+                        <img src="http://via.placeholder.com/50x50" alt="">
+                    </div>
                 </div>
                 <div class="author-social">
-                    <img src="http://via.placeholder.com/50x50" alt="facebook">
-                    <img src="http://via.placeholder.com/50x50" alt="twitter">
-                    <img src="http://via.placeholder.com/50x50" alt="linkedin">
-                    <img src="http://via.placeholder.com/50x50" alt="pinterest">
-                    <img src="http://via.placeholder.com/50x50" alt="google plus">
+                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
+                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
+                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
+                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
+                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
                 </div>
                 <div class="author-info">
                     <p class="about">About the author</p>
@@ -40,9 +43,9 @@
                         porta porttitor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed
                         porta porttitor.</p>
                 </div>
-            </div> -->
-        </aside>
-        <?php get_sidebar() ?>
+            </div>
+            <?php get_sidebar(); ?>
+        </div>
     </div>
     <div class="resource-center-highlights">
         <div class="title">
