@@ -26,7 +26,7 @@
                     </div>
                     <div class="img-r">
                         <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?><?php the_title(); ?>"></a></h2>
-                        <p>By <span class="by">Sam Sekine</span> in <span class="by">estate planning</span></p>
+                        <p class="author">By <span class="by">Sam Sekine</span> in <span class="by">estate planning</span></p>
 
                         <span class="short-desc"><?php echo the_content(''); ?></span>
                         <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a>
