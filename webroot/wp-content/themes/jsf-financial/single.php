@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <section class="resource-content">
-    <img src="<?php bloginfo('template_directory'); ?>/img/tough-growth.jpg" alt="Hero image">
+    <div class="hero-post">
+        <img src="<?php bloginfo('template_directory'); ?>/img/tough-growth.jpg" alt="Hero image">
+    </div>
     <div class="main-post-content">
         <div id="post-<?php the_ID(); ?>" <?php post_class('post-article'); ?>>
             <h1><?php the_title(); ?></h1>
