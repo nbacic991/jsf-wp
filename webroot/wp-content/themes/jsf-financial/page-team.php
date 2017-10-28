@@ -15,63 +15,63 @@
     </section>
     <!-- Start Repeater -->
     <!-- <?php global $post; ?> -->
-    <?php if( have_rows('team_repeater')): // check for repeater fields ?>
+<?php if( have_rows('team_repeater')): // check for repeater fields ?>
 
     <section class="team-members">
-        
 
-        <?php while ( have_rows('team_repeater')) : the_row(); // loop through the repeater fields ?>
 
-        <?php // set up post object and vars
-            $post_object = get_sub_field('select_team_in_this_section');
+		<?php while ( have_rows('team_repeater')) : the_row(); // loop through the repeater fields ?>
 
-            $team_add_sector = get_sub_field('team_add_sector');
-            $team_sector_title = get_sub_field('team_sector_title');
-            $team_sector_description = get_sub_field('team_sector_description');
-        ?>
+			<?php // set up post object and vars
+			$post_object = get_sub_field('select_team_in_this_section');
 
-        <?php if( $team_add_sector): ?>
-           
-            <div class="gray-box">
-                <div class="inner">
-                    <h2><?php echo $team_sector_title ?></h2>
-                    <p><?php echo $team_sector_description ?></p>
+			$team_add_sector = get_sub_field('team_add_sector');
+			$team_sector_title = get_sub_field('team_sector_title');
+			$team_sector_description = get_sub_field('team_sector_description');
+			?>
+
+			<?php if( $team_add_sector): ?>
+
+                <div class="gray-box">
+                    <div class="inner">
+                        <h2><?php echo $team_sector_title ?></h2>
+                        <p><?php echo $team_sector_description ?></p>
+                    </div>
                 </div>
+
+			<?php endif; ?>
+
+
+
+            <div class="team-management">
+
+				<?php foreach( $post_object as $post): // variable must be called $post (IMPORTANT) ?>
+					<?php setup_postdata($post); ?>
+
+                    <div class="team-member">
+						<?php the_post_thumbnail(); // Fullsize image for the single post ?>
+                        <h3><?php the_title(); ?></h3>
+                        <p>
+							<?php
+							$terms = get_the_terms( $post->ID , 'teams_positions' );
+							foreach ( $terms as $term ) {
+								echo $term->name;
+							}
+							?>
+                        </p>
+                    </div>
+
+				<?php endforeach; ?>
+
             </div>
-            
-        <?php endif; ?>
+
+			<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 
 
-        
-        <div class="team-management">
-
-            <?php foreach( $post_object as $post): // variable must be called $post (IMPORTANT) ?>
-                <?php setup_postdata($post); ?>
-
-                <div class="team-member">
-                    <?php the_post_thumbnail(); // Fullsize image for the single post ?>
-                    <h3><?php the_title(); ?></h3>
-                    <p>
-                        <?php
-                        $terms = get_the_terms( $post->ID , 'teams_positions' );
-                        foreach ( $terms as $term ) {
-                            echo $term->name;
-                        }
-                        ?>
-                    </p>
-                </div>
-
-            <?php endforeach; ?>
-
-        </div>
-
-        <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-
-
-        <?php endwhile; ?>
+		<?php endwhile; ?>
 
     </section>
     <!-- End Repeater -->
-    <?php endif; ?>
+<?php endif; ?>
 
 <?php get_footer(); ?>
