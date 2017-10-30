@@ -49,16 +49,18 @@
 					<?php setup_postdata($post); ?>
 
                     <div class="team-member">
-						<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-                        <h3><?php the_title(); ?></h3>
-                        <p>
-							<?php
-							$terms = get_the_terms( $post->ID , 'teams_positions' );
-							foreach ( $terms as $term ) {
-								echo $term->name;
-							}
-							?>
-                        </p>
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+    						<?php the_post_thumbnail(); // Fullsize image for the single post ?>
+                            <h3><?php the_title(); ?></h3>
+                            <p>
+    							<?php
+    							$terms = get_the_terms( $post->ID , 'teams_positions' );
+    							foreach ( $terms as $term ) {
+    								echo $term->name;
+    							}
+    							?>
+                            </p>
+                        </a>
                     </div>
 
 				<?php endforeach; ?>

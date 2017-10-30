@@ -25,7 +25,7 @@
                         <p><span><?php the_time('j'); ?></span> <?php the_time('F'); ?></p>
                     </div>
                     <div class="img-r">
-                        <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?><?php the_title(); ?>"></a></h2>
+                        <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
                         <p class="author">By <span class="by">Sam Sekine</span> in <span class="by">estate
                                 planning</span></p>
 

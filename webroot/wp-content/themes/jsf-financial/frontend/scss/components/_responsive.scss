@@ -282,10 +282,10 @@
     }
 
     .hero-bottom-caption {
-      right: 0;
       padding-right: 100px;
-      width: 535px;
+      width: 691px;
       text-align: left;
+      float: right;
       button {
         margin: 0;
       }
@@ -369,11 +369,14 @@
 @media (min-width: 1180px) {
   .slides {
     li {
-      height: 650px !important;
+      
       .flex-caption {
+        float: left;
         width: 40%;
+        text-align: left;
         p {
-          font-size: 55px;
+          font-size: 45px;
+          line-height: 55px;
           text-align: left;
         }
       }
@@ -414,6 +417,7 @@
       a {
         margin-top: 20px;
       }
+
     }
   }
   .main-post-content {
@@ -421,7 +425,6 @@
     .post-article {
       .title {
         text-align: left;
-        max-width: 100%;
         z-index: 1;
         background: $color-white;
         &::after {
@@ -462,5 +465,22 @@
         font-size: 15px;
       }
     }
+  }
+}
+
+@media (min-width: 1366px) {
+  .slides li .flex-image {
+    width: 500px;
+    height: 500px;
+  }
+  .slides li {
+    padding: 90px 0 130px;
+  }
+  .slides li .flex-caption {
+    width: 45%;
+  }
+  .slides li .flex-caption p {
+    font-size: 55px;
+    line-height: 65px;
   }
 }

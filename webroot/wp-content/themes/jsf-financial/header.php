@@ -33,9 +33,9 @@
             <span aria-controls="primary-menu" aria-expanded="false"></span>
         </div>
 
-        <button class="close menu-toggle">X</button>
 
         <nav id="site-navigation" class="main-navigation">
+        <button class="close menu-toggle">X</button>
 
 			<?php
 			wp_nav_menu( array(

@@ -28,6 +28,7 @@ get_header();
                     <!-- article -->
                     <div id="post-<?php the_ID(); ?>" <?php post_class('images'); ?>>
                         <div class="img-l">
+
 							<?php the_post_thumbnail('archive-size'); // Fullsize image for the single post ?>
                             <p><span><?php the_time('j'); ?></span> <?php the_time('F'); ?></p>
                         </div>
@@ -56,28 +57,6 @@ get_header();
 			<?php endif; ?>
         </div>
         <div class="posts-right">
-            <div class="about-author">
-                <div class="short-info">
-                    <p class="post-date">23 <span>November</span></p>
-                    <div class="author-img">
-                        <img src="http://via.placeholder.com/50x50" alt="">
-                    </div>
-                </div>
-                <div class="author-social">
-                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
-                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
-                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
-                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
-                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
-                </div>
-                <div class="author-info">
-                    <p class="about">About the author</p>
-                    <p class="name">Sam Sekine</p>
-                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed
-                        porta porttitor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales felis sed
-                        porta porttitor.</p>
-                </div>
-            </div>
 			<?php get_sidebar(); ?>
         </div>
     </div>

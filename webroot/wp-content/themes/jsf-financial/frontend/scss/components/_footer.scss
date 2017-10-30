@@ -8,8 +8,7 @@
     text-align: center;
     display: block;
     margin-bottom: 100px;
-    font-family: Brandon Grotesque;
-    font-weight: bold;
+    font-family: font116557;
     font-size: 16px;
     span {
       &::before {
@@ -32,8 +31,9 @@
  */
 
 .site-footer {
-  background-color: #346397;
+  background: #346397 url("img/SVG/home-hero-bg.svg") no-repeat;
   text-align: center;
+  background-position: right;
   .footer-menus {
     margin: auto;
     padding-top: 30px;
@@ -44,8 +44,7 @@
     }
   }
   .menu-title {
-    font-family: Brandon Grotesque;
-    font-weight: bold;
+    font-family: font116557;
     text-transform: uppercase;
     font-size: 12px;
     color: #C9D5E2;
@@ -70,7 +69,7 @@
     padding-bottom: 30px;
     img {
       width: 300px;
-      height: 100px;
+      margin-right: 20px;
     }
     p {
       font-family: Merriweather;

@@ -18,12 +18,14 @@
 					?>
 
                     <li>
-                        <div class="flex-caption">
-                            <p><?php echo $flex_caption; ?></p>
-                            <button><?php echo $flex_button; ?></button>
-                        </div>
-                        <div class="flex-image">
-                            <img src="<?php echo $flex_image['url']; ?>" alt="<?php echo $flex_image['alt'] ?>" />
+                        <div class="container">
+                            <div class="flex-caption">
+                                <p><?php echo $flex_caption; ?></p>
+                                <a href="#"><?php echo $flex_button; ?></a>
+                            </div>
+                            <div class="flex-image">
+                                <img src="<?php echo $flex_image['url']; ?>" alt="<?php echo $flex_image['alt'] ?>" />
+                            </div>
                         </div>
                     </li>
 
@@ -113,7 +115,7 @@
 
 		<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 
-            <section class="hero-bottom" style="background: url('<?php the_post_thumbnail_url(); ?>') no-repeat;
+            <section class="hero-bottom clearfix" style="background: url('<?php the_post_thumbnail_url(); ?>') no-repeat;
                     background-size: cover;">
                 <!-- article -->
                 <div  id="post-<?php the_ID(); ?>" <?php post_class( 'hero-bottom-caption' ); ?>>

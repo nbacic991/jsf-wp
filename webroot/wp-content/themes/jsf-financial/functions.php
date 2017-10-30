@@ -130,7 +130,6 @@ add_action( 'widgets_init', 'jsf_financial_widgets_init' );
  * Enqueue scripts and styles.
  */
 function jsf_financial_scripts() {
-	wp_enqueue_style( 'jsf-financial-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'jsf-financial-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -153,6 +152,9 @@ function jsf_financial_styles()
 {
     wp_register_style('css-flexslider', get_template_directory_uri() . '/css/flexslider.css', array(), '1.0', 'all');
     wp_enqueue_style('css-flexslider'); // Enqueue it!
+
+	
+		wp_enqueue_style( 'jsf-financial-style', get_stylesheet_uri() );
 
 
 }

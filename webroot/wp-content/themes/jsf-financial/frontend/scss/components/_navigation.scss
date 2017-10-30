@@ -27,7 +27,6 @@
       font-size: 35px;
       color: #336497;
       font-family: font116557;
-      font-weight: bold;
       padding: 0;
       background: none;
       transition: .4s all ease-in-out;
@@ -98,6 +97,17 @@
       text-transform: uppercase;
       padding: 0 20px;
       text-align: center;
+      .current_page_item {
+        a {
+          color: #336497;
+          &::before {
+            content:'\45';
+            font-family: ElegantIcons;
+            color: #336497;
+            display: inline-block;
+          }
+        }
+      }
       .client-login {
         a {
           display: inline-block;
@@ -112,7 +122,6 @@
       a {
         display: block;
         font-family: font116557;
-        font-weight: bold;
         font-size: 16px;
         color: #929497;
         padding: 15px 10px;
