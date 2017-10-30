@@ -150,6 +150,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      height: 100px;
       .site-branding {
         position: relative;
       }
@@ -157,8 +158,17 @@
         display: none;
       }
       .main-navigation {
+        #search-button-listener {
+          display: inline-block;
+          margin-left: 20px;
+        }
         .custom-menu-class {
           text-align: right;
+        }
+        #menu-main-nav-top,
+        .menu-menu-1-container {
+          padding-bottom: 0;
+          display: inline-block;
         }
         .menu {
           display: inline-block;

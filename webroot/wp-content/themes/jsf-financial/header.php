@@ -52,11 +52,11 @@
                 <div id="search-button"></div>
             </a>
             <div class="mk-fullscreen-search-overlay" id="mk-search-overlay">
-                <a href="#" class="mk-fullscreen-close" id="mk-fullscreen-close-button">X</a>
                 <div id="mk-fullscreen-search-wrapper">
+                    <a href="#" class="mk-fullscreen-close" id="mk-fullscreen-close-button">X</a>
                     <form id="mk-fullscreen-searchform" class="search" method="get" action="<?php echo home_url();
 					?>" role="search">
-                        <input id="mk-fullscreen-search-input" type="search" name="s" placeholder="<?php _e( 'To search, type and hit enter.', 'html5blank' ); ?>">
+                        <input id="mk-fullscreen-search-input" type="search" name="s" placeholder="<?php _e( 'Start typing..', 'html5blank' ); ?>">
                         <button class="search-submit" type="submit" role="button"><?php _e( 'Search', 'html5blank' ); ?></button>
                     </form>
                 </div>

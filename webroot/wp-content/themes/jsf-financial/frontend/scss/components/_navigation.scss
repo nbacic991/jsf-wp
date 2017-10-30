@@ -8,8 +8,8 @@
     a {
       &:hover:before {
         position: absolute;
-        bottom: 18px;
-        left: -10px;
+        bottom: 16px;
+        left: 50px;
         font-family: ElegantIcons;
         content:'\45';
         display: inline-block;
@@ -23,8 +23,11 @@
     .close {
       display: block;
       margin-right: 10px;
-      z-index: 99999999999999999999999999;
+      z-index: 11;
       font-size: 35px;
+      color: #336497;
+      font-family: font116557;
+      font-weight: bold;
       padding: 0;
       background: none;
       transition: .4s all ease-in-out;
@@ -41,7 +44,6 @@
   }
   .site-branding {
     padding-left: 15px;
-    z-index: 99999999999999;
     display: inline-block;
     position: absolute;
     img {
@@ -50,10 +52,11 @@
     }
   }
   .menu-toggle {
-    position: absolute;
-    top: 0;
+    background-color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
     right: 50px;
-    //z-index: 999999;
     cursor: pointer;
     span {
       display: block;
@@ -67,6 +70,7 @@
       }
       &:nth-child(3) {
         top: 20px;
+        margin-bottom: 0;
       }
     }
   }
@@ -83,6 +87,11 @@
     #search-button-listener {
       display: none;
     }
+    #menu-main-nav-top {
+      a {
+        font-size: 14px;
+      }
+    }
     .menu {
       display: none;
       list-style-type: none;
@@ -91,7 +100,7 @@
       text-align: center;
       .client-login {
         a {
-          font-size: 14px;
+          display: inline-block;
         }
         &::before {
           content:'\45';
@@ -101,7 +110,8 @@
         }
       }
       a {
-        font-family: Brandon Grotesque;
+        display: block;
+        font-family: font116557;
         font-weight: bold;
         font-size: 16px;
         color: #929497;
@@ -129,7 +139,7 @@
     top: 0;
     left: 0;
     background: rgba(255,255,255,0.95);
-    z-index: 100;
+    z-index: 10;
     -webkit-transition: .4s all ease-in;
     -moz-transition: .4s all ease-in;
     -ms-transition: .4s all ease-in;
@@ -144,7 +154,6 @@
     #search-button-listener {
       display: block;
       position: absolute;
-      z-index: 9999999999999999999;
       left: 50%;
       transform: translateX(-50%);
     }
