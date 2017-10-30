@@ -4,6 +4,7 @@
   padding: 100px 5px;
   text-align: center;
   position: relative;
+  z-index: 1;
   &::after {
     content: '';
     position: absolute;
@@ -12,6 +13,7 @@
     bottom: 0;
     right: 0;
     left: -40px;
+    z-index: -1;
   }
   .left {
     h1 {
@@ -81,6 +83,7 @@
     p {
       font-style: italic;
       max-width: 500px;
+      text-transform: initial;
       &:nth-of-type(2) {
         margin-top: 0;
       }
@@ -139,7 +142,7 @@
     .title {
       text-align: center;
       &:after {
-        margin: 10px auto;
+        margin: 10px 0;
         display: block;
         content: '';
         border-bottom: 5px solid #666666;

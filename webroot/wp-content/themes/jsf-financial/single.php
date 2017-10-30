@@ -28,17 +28,17 @@
         <div class="posts-right">
             <div class="about-author">
                 <div class="short-info">
-                    <p class="post-date">23 <span>November</span></p>
+                    <p class="post-date"><span>23 </span>November</p>
                     <div class="author-img">
-                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/Billy-Yeh-e1366917292687-280x350.jpg" alt="">
                     </div>
                 </div>
                 <div class="author-social">
-                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
-                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
-                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
-                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
-                    <a href="#"><img src="http://via.placeholder.com/50x50" alt="facebook"></a>
+                    <a href="#"><span class="social_facebook_square" aria-hidden="true"></span></a>
+                    <a href="#"><span class="social_twitter_square" aria-hidden="true"></span></a>
+                    <a href="#"><span class="social_linkedin_square" aria-hidden="true"></span></a>
+                    <a href="#"><span class="social_pinterest_square" aria-hidden="true"></span></a>
+                    <a href="#"><span class="social_googleplus_square " aria-hidden="true"></span></a>
                 </div>
                 <div class="author-info">
                     <p class="about">About the author</p>

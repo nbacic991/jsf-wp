@@ -327,7 +327,7 @@
             content: '';
             position: absolute;
             left:0;
-            top: 77px;
+            top: 70px;
             border-left: 40px solid transparent;
             border-right: 40px solid transparent;
             border-top: 40px solid $color-gray;
@@ -348,9 +348,11 @@
         }
       }
       .member-photo {
-        margin-top: -77px;
+        margin: 0;
+        margin-top: -70px;
       }
       .member-info {
+        margin: 0;
         margin-top: 50px;
         width: 500px;
         h1 {

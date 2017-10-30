@@ -97,7 +97,7 @@
       text-transform: uppercase;
       padding: 0 20px;
       text-align: center;
-      .current_page_item {
+      .sub-menu {
         a {
           color: #336497;
           &::before {
@@ -106,6 +106,11 @@
             color: #336497;
             display: inline-block;
           }
+        }
+      }
+      .current_page_item {
+        a {
+          color: #336497;
         }
       }
       .client-login {
