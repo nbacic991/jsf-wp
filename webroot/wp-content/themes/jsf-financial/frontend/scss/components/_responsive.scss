@@ -2,11 +2,6 @@
 
   /* Home page */
 
-  .site-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
   .main-content {
     display: flex;
     justify-content: space-between;
@@ -147,46 +142,17 @@
   }
 
 }
-@media (max-width: 1024px) {
-
-  .site-header {
-    .main-navigation {
-      position: relative;
-      #primary-menu {
-        top: 120px;
-        width: 250px;
-        z-index: 9999999999;
-      }
-      #primary-menu,
-      #menu-main-nav-top {
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      #menu-main-nav-top {
-        top: 50px;
-        z-index: 1;
-        width: 250px;
-      }
-      .menu {
-        z-index: 1;
-        background-color: #DEEAD6;
-        position: absolute;
-        li {
-          margin: 5px 0;
-        }
-        a {
-          padding: 0;
-        }
-      }
-    }
-  }
-
-}
 
 @media (min-width: 1024px) {
 
   .site {
     .site-header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .site-branding {
+        position: relative;
+      }
       .menu-toggle {
         display: none;
       }

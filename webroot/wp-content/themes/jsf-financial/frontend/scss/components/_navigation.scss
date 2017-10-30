@@ -1,5 +1,6 @@
 .menu-menu-1-container {
-  display: inline-block;
+  display: block;
+  padding-bottom: 30px;
 }
 
 .menu-item-has-children {
@@ -18,25 +19,69 @@
   }
 }
 .site-header {
+  &.open {
+    .close {
+      display: block;
+      margin-right: 10px;
+      z-index: 99999999999999999999999999;
+      font-size: 35px;
+      padding: 0;
+      background: none;
+      transition: .4s all ease-in-out;
+    }
+  }
+}
+.site-header {
+  position: relative;
+  height: 40px;
+  .close {
+    position: absolute;
+    right: 50px;
+    display: none;
+  }
   .site-branding {
+    padding-left: 15px;
+    z-index: 99999999999999;
+    display: inline-block;
+    position: absolute;
     img {
       width: 200px;
-      height: 50px;
       display: block;
-      margin: auto;
+    }
+  }
+  .menu-toggle {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    //z-index: 999999;
+    cursor: pointer;
+    span {
+      display: block;
+      border: 2px solid #336497;
+      background-color: #336497;
+      height: 2px;
+      width: 30px;
+      margin-bottom: 5px;
+      &:nth-child(2) {
+        top: 10px;
+      }
+      &:nth-child(3) {
+        top: 20px;
+      }
     }
   }
   .main-navigation {
-    .menu-toggle {
-      margin: auto;
-      border-radius: 4px;
-      background-color: #3498db;
-      color: #FFFFFF;
-      font-size: 18px;
-      padding: 15px;
-    }
+    -webkit-transition: .4s all ease-in-out;
+    -moz-transition: .4s all ease-in-out;
+    -ms-transition: .4s all ease-in-out;
+    -o-transition: .4s all ease-in-out;
+    transition: .4s all ease-in-out;
+    top: -20px;
     #menu-main-nav-top {
       padding-bottom: 10px;
+    }
+    #search-button-listener {
+      display: none;
     }
     .menu {
       display: none;
@@ -78,9 +123,36 @@
     }
   }
   .open {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.95);
+    z-index: 100;
+    -webkit-transition: .4s all ease-in;
+    -moz-transition: .4s all ease-in;
+    -ms-transition: .4s all ease-in;
+    -o-transition: .4s all ease-in;
+    transition: .4s all ease-in;
+    .custom-menu-class {
+      padding-top: 60px;
+    }
+    .menu-menu-1-container {
+      padding-bottom: 30px;
+    }
+    #search-button-listener {
+      display: block;
+      position: absolute;
+      z-index: 9999999999999999999;
+      left: 50%;
+      transform: translateX(-50%);
+    }
     .menu {
       display: block;
       text-align: center;
+      max-height: 800px;
+      height: 100%;
       li {
         ul {
           display: none;

@@ -27,8 +27,16 @@
 			<?php the_custom_logo(); ?>
         </div><!-- .site-branding -->
 
+        <div class="menu-toggle">
+            <span aria-controls="primary-menu" aria-expanded="false"></span>
+            <span aria-controls="primary-menu" aria-expanded="false"></span>
+            <span aria-controls="primary-menu" aria-expanded="false"></span>
+        </div>
+
+        <button class="close menu-toggle">X</button>
+
         <nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span>Menu</span></button>
+
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-top',
