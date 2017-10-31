@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-        <!-- <div class="footer-menus">
+        <!-- <div class="footer-menus container">
             <div class="footer-menu">
                 <p class="menu-title">Questions</p>
                 <?php wp_nav_menu (array('theme_location' => 'footer-1','menu_class' => 'nav'));?>
@@ -32,7 +32,7 @@
                 <?php wp_nav_menu (array('theme_location' => 'footer-4','menu_class' => 'nav'));?>
             </div>
         </div> -->
-		<div class="site-info">
+		<div class="site-info container">
             <img src="<?php bloginfo('template_directory'); ?>/img/SVG/logo-line.svg" alt="footer logo" />
             <div class="info-desc">
                 <p>Securities are offered through Mid Atlantic Capitol Corporation ("MACC") a registered broker dealer,

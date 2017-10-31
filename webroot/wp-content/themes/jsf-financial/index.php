@@ -12,7 +12,7 @@
             <a href="#">Read more</a>
         </div>
     </div>
-    <div class="main-post-content">
+    <div class="main-post-content container">
 
         <div class="posts">
             <h2 class="title">What's trending</h2>
@@ -41,7 +41,7 @@
             <?php get_sidebar(); ?>
         </div>
     </div>
-    <section class="resource-center-highlights">
+    <section class="resource-center-highlights container">
         <div class="title">
             <p>Resource center highlights</p>
             <a href="#">view all</a>

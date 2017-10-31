@@ -16,7 +16,7 @@ get_header();
             <a href="#">Read more</a>
         </div>
     </div>
-    <div class="main-post-content">
+    <div class="main-post-content container">
 
         <div class="posts">
             <h2 class="title">What's trending</h2>
@@ -65,7 +65,7 @@ get_header();
             <p>Resource center highlights</p>
             <a href="#">view all</a>
         </div>
-        <div class="highlighted-resources">
+        <div class="highlighted-resources container">
 			<?php $the_custom_post_query = new WP_Query( array( 'post_type' => 'resource-centers', 'order'   => 'ASC', 'posts_per_page' => 3, 'category_name' => 'highlights' ) ); ?>
 			<?php if ( $the_custom_post_query->have_posts() ) : ?>
 				<?php while ($the_custom_post_query -> have_posts()) : $the_custom_post_query -> the_post(); ?>

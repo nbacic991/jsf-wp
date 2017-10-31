@@ -6,7 +6,7 @@
                 <p>Our team - Investment management</p>
             </div>
         </div>
-        <div class="member-wrapper">
+        <div class="member-wrapper container">
             <div class="member-info">
                 <h1><?php the_title(); ?></h1>
                 <p class="title">Founder &amp; Managing Member / Investment Advisor Representative</p>

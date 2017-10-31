@@ -56,7 +56,7 @@
 		$static_block_right_button_url = get_field('static_block_right_button_url');
 
 		?>
-        <section class="main-content">
+        <section class="main-content container">
             <div class="main-content-left">
                 <img src="<?php echo $static_block_left_image['url']; ?>" alt="<?php echo $static_block_left_image['alt'] ?>" />
                 <div class="post-info">
@@ -75,7 +75,7 @@
             </div>
         </section>
 
-        <section class="resource-center-highlights">
+        <section class="resource-center-highlights container">
             <div class="title">
                 <p>Resource center highlights</p>
                 <a href="#">view all</a>
@@ -148,7 +148,7 @@
 
 		<?php if( have_rows('company_features') ): ?>
 
-            <section class="footer-top">
+            <section class="footer-top container">
 
 				<?php while( have_rows('company_features') ): the_row();
 

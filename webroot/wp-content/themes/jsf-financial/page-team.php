@@ -43,7 +43,7 @@
 
 
 
-            <div class="team-management">
+            <div class="team-management container">
 
 				<?php foreach( $post_object as $post): // variable must be called $post (IMPORTANT) ?>
 					<?php setup_postdata($post); ?>
