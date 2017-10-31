@@ -58,7 +58,9 @@
 		?>
         <section class="main-content container">
             <div class="main-content-left">
-                <img src="<?php echo $static_block_left_image['url']; ?>" alt="<?php echo $static_block_left_image['alt'] ?>" />
+                <div class="image-left">
+                    <img src="<?php echo $static_block_left_image['url']; ?>" alt="<?php echo $static_block_left_image['alt'] ?>" />
+                </div>
                 <div class="post-info">
                     <h2 class="link"><a href="<?php echo $static_block_left_button_url; ?>"><?php echo $static_block_left_title; ?></a></h2>
                     <p><?php echo $static_block_left_description; ?></p>
@@ -66,7 +68,9 @@
                 </div>
             </div>
             <div class="main-content-right">
-                <img src="<?php echo $static_block_right_image['url']; ?>" alt="<?php echo $static_block_right_image['alt'] ?>" />
+                <div class="image-right">
+                    <img src="<?php echo $static_block_right_image['url']; ?>" alt="<?php echo $static_block_right_image['alt'] ?>" />
+                </div>
                 <div class="post-info">
                     <h2 class="link"><a href="<?php echo $static_block_right_button_url; ?>"><?php echo $static_block_right_title; ?></a></h2>
                     <p><?php echo $static_block_right_description; ?></p>

@@ -31,8 +31,18 @@
   .main-content-left,
   .main-content-right {
     width: 100%;
-    img {
-      width: 100%;
+    .image-left,
+    .image-right {
+      width: 180px;
+      height: 220px;
+      overflow: hidden;
+      img {
+        width: auto;
+        height: 220px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 }
