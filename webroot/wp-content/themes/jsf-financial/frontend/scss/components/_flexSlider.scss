@@ -3,57 +3,69 @@
   position: relative;
   background: #336497 url("img/SVG/home-hero-bg.svg");
   background-size: cover;
-  .flex-control-nav {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
-.slides {
-  li {
-    position: relative;
+.flex-control-nav {
+  position: absolute;
+  text-align: center;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heroo {
+  position: relative;
+
+  .container {
     display: flex;
     justify-content: space-between;
-    padding: 60px 0 100px;
-    .flex-caption {
-      text-align: center;
-      text-transform: uppercase;
-      p {
-        font-family: font116557;
-        text-align: center;
-        font-size: 30px;
-        color: #FFF;
-        margin-bottom: 0;
-      }
-      a {
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    h1 {
+      color: $color-white;
+      font-size: 55px;
+      line-height: 65px;
+    }
+    h4 {
+      text-transform: none;
+      color: $color-white;
+      font-weight: normal;
+      font-family: Merriweather;
+      line-height: 25px;
+    }
+    h5 {
+      color: $color-white;
+      margin: 20px 0;
+      .author,
+      .date,
+      .tag {
+        color: #7FADD3;
+        text-transform: uppercase;
         font-family: font116557;
         font-size: 14px;
-        margin: 50px auto auto auto;
-        overflow: hidden;
-        background-color: #DEEAD6;
-        color: #336497;
-        border: none;
-        padding: 10px 25px;
+      }
+    }
+    a {
+      font-family: font116557;
+      font-size: 14px;
+      margin: 50px auto auto auto;
+      overflow: hidden;
+      background-color: #DEEAD6;
+      color: #336497;
+      border: none;
+      padding: 10px 25px;
+      display: inline-block;
+      &:after {
+        font-family: ElegantIcons;
+        content: '\45';
         display: inline-block;
-        &::after {
-          font-family: ElegantIcons;
-          content: '\45';
-          display: inline-block;
-        }
+        vertical-align: middle;
       }
     }
     .flex-image {
-      width: 400px;
-      height: 400px;
-      overflow: hidden;
-      display: none;
-      flex-basis: 50%;
-      padding: 5px;
-      float: right;
-      border: 4px solid rgba(255,255,255,.15);
-      border-radius: 50%;
+      display: block;
+      margin: auto;
     }
   }
 }

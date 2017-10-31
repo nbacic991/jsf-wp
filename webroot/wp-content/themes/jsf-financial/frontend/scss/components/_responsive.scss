@@ -418,11 +418,6 @@
         float: left;
         width: 40%;
         text-align: left;
-        p {
-          font-size: 45px;
-          line-height: 55px;
-          text-align: left;
-        }
       }
       .flex-image {
         display: block;
@@ -523,9 +518,5 @@
   }
   .slides li .flex-caption {
     width: 45%;
-  }
-  .slides li .flex-caption p {
-    font-size: 55px;
-    line-height: 65px;
   }
 }

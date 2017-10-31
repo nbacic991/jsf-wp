@@ -98,7 +98,6 @@ html[xmlns] .flexslider .slides {
     background-size: cover;
 }
 .flexslider .slides li img {
-  height: 500px;
   border-radius: 50%;
 }
 .flexslider .slides img {
