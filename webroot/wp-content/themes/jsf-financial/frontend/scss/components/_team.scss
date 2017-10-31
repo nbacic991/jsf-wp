@@ -8,7 +8,9 @@
   &::after {
     content: '';
     position: absolute;
-    background: url('img/SVG/home-hero-bg.svg');
+    background-image: url('img/SVG/home-hero-bg.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
     top: 0;
     bottom: 0;
     right: 0;
@@ -34,6 +36,7 @@
     }
   }
   .right {
+    display: none;
     flex-basis: 48%;
     border-radius: 50%;
     overflow: hidden;

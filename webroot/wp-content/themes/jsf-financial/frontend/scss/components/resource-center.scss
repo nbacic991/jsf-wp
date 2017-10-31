@@ -16,6 +16,7 @@
     bottom: 0;
   }
   .hero-caption {
+    width: 90%;
     text-align: center;
     position: absolute;
     z-index: 1;
@@ -26,11 +27,11 @@
     p {
       color: $color-white;
       font-weight: bold;
-      margin-bottom: 50px;
     }
     p:nth-of-type(1) {
       text-transform: uppercase;
       font-family: font116557;
+      font-size: 14px;
     }
     p:nth-of-type(2) {
       font-weight: normal;
@@ -44,6 +45,8 @@
       background-color: #DEEAD6;
       color: #336497;
       margin: auto;
+      display: inline-block;
+      margin-top: 20px;
       &::after {
         font-family: ElegantIcons;
         content:'\45';
@@ -53,19 +56,8 @@
 }
 .resource-content {
   .hero-post {
-    height: 470px;
-    overflow: hidden;
-    position: relative;
     img {
-      position: absolute;
       width: 100%;
-      top: 27%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
     }
   }
 }
@@ -73,9 +65,10 @@
   overflow: hidden;
   .description {
     .authored-by {
-      font-size: 12px;
+      font-size: 14px;
       font-family: font116557;
       text-transform: uppercase;
+      padding-bottom: 40px;
       span {
         a {
           color: #7FADD3;
@@ -94,6 +87,7 @@
     border-top: 3px solid $color-gray;
     border-bottom: 3px solid $color-gray;
     padding: 20px 0;
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
     a {
@@ -123,6 +117,16 @@
         vertical-align: middle;
         margin-left: 10px;
       }
+    }
+  }
+  &.content-indent {
+    overflow: initial;
+    .post-article {
+      position: relative;
+      margin-top: -60px;
+      padding-top: 60px;
+      padding-left: 60px;
+      background: #fff;
     }
   }
 }
@@ -214,6 +218,7 @@
   margin: auto;
   .widget {
     position: relative;
+    margin-bottom: 80px;
     &::after {
       position: absolute;
       content: '';
@@ -237,6 +242,7 @@
     padding-right: 10px;
     &:nth-child(1) {
       margin-top: 0;
+      margin-bottom: 10px;
     }
   }
   ul {
@@ -406,8 +412,8 @@
   }
   .author-info {
     background-color: $color-gray;
-    margin-top: 65px;
-    padding: 10px;
+    margin: 90px 0 50px;
+    padding: 30px 40px;
     width: 100%;
     .about {
       text-transform: uppercase;
