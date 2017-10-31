@@ -35,7 +35,6 @@
 }
 .site-header {
   position: relative;
-  height: 40px;
   .close {
     position: absolute;
     right: 50px;
@@ -52,11 +51,14 @@
   }
   .menu-toggle {
     background-color: #fff;
-    padding: 10px;
-    position: fixed;
-    top: 20px;
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position: absolute;
     right: 50px;
     cursor: pointer;
+
     span {
       display: block;
       border: 2px solid #336497;
@@ -145,6 +147,7 @@
         padding: 0;
         ul {
           display: none;
+          z-index: 2 !important;
         }
       }
     }
@@ -187,6 +190,3 @@
     }
   }
 }
-
-//Search button
-

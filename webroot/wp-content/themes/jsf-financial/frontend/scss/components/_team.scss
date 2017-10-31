@@ -74,6 +74,7 @@
       font-style: italic;
       max-width: 500px;
       text-transform: initial;
+      margin: auto;
       &:nth-of-type(2) {
         margin-top: 0;
       }
@@ -86,6 +87,9 @@
       -moz-border-radius: 50%;
       border-radius: 50%;
       border: 2px solid #E2E2E2;
+      margin: auto;
+      margin-bottom: 10px;
+
       &:hover {
         border-color: #3498db;
       }

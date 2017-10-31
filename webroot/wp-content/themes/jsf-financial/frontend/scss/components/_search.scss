@@ -10,6 +10,7 @@
 /* Search Overlay */
 
 .search-submit {
+  font-family: 'font116557';
   display: block;
   margin:  20px auto;
   width: 100px;
@@ -18,6 +19,7 @@
 }
 
 .mk-fullscreen-search-overlay #mk-fullscreen-search-wrapper #mk-fullscreen-searchform input[type=search] {
+  font-family: 'font116557';
   width: 100px;
   height: 100%;
   background-color: transparent;
@@ -90,6 +92,8 @@
 .mk-fullscreen-search-overlay .mk-fullscreen-close:link,
 .mk-fullscreen-search-overlay .mk-fullscreen-close:visited {
   color: #fff;
+  font-family: 'font116557';
+
 }
 
 .mk-fullscreen-search-overlay .mk-fullscreen-close {

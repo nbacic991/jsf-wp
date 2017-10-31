@@ -39,6 +39,9 @@
     .team-member {
       flex-basis: 50%;
       text-align: left;
+      p {
+        margin: 0;
+      }
       .member-image {
         float: left;
         margin-right: 30px;
@@ -148,7 +151,18 @@
   }
 
 }
-
+@media (max-width: 1023px){
+  .site-header {
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    z-index: 300;
+    box-shadow: 0 5px 8px $color-black;
+  }
+  .site-content {
+    margin-top: 100px;
+  }
+}
 @media (min-width: 1024px) {
 
   .site {
@@ -157,6 +171,9 @@
       justify-content: space-around;
       align-items: flex-end;
       height: 100px;
+      margin: 20px auto;
+      width: 100%;
+      padding: 0;
       .site-branding {
         position: relative;
       }
