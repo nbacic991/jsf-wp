@@ -6,6 +6,7 @@
 // Set some properties here ----------------------------------
 var mySass = './scss/style.scss';
 var myCSS  = '../';
+var myCustomSass = './scss/components/*.scss';
 
 // -----------------------------------------------------------
 // if needed, other things could be hacked down there
@@ -79,7 +80,7 @@ gulp.task('default', ['sass'], function () {
 
 
 gulp.task('watch', ['sass'], function () {
-  gulp.watch(mySass, ['sass'])
+    gulp.watch(myCustomSass, ['sass'])
 });
 
 
