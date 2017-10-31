@@ -50,7 +50,9 @@
 
                     <div class="team-member">
                         <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-    						<?php the_post_thumbnail(); // Fullsize image for the single post ?>
+    						<div class="member-image">
+							    <?php the_post_thumbnail(); // Fullsize image for the single post ?>
+                            </div>
                             <h3><?php the_title(); ?></h3>
                             <p>
     							<?php
