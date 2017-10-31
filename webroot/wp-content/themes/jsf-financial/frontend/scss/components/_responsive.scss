@@ -1,3 +1,23 @@
+@media (min-width:480px) {
+  .resource-content {
+    .hero-post {
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+      img {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
 @media (min-width: 770px) {
 
   /* Home page */
@@ -53,6 +73,11 @@
   }
 
 
+  .resource-content {
+    .hero-post {
+      height: 470px;
+    }
+  }
   .resource-center-highlights {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -102,9 +127,6 @@
     }
   }
   .widget-area {
-    .widget {
-      margin-top: 80px;
-    }
     .widget-title {
       margin-bottom: 6px;
     }
@@ -146,6 +168,8 @@
       width: 30%;
       float: right;
       clear: right;
+    }
+    .content-indent .posts-right {
       margin-top: 30px;
     }
   }
@@ -157,7 +181,6 @@
     position: fixed;
     top: 0;
     z-index: 300;
-    box-shadow: 0 5px 8px $color-black;
   }
   .site-content {
     margin-top: 100px;
@@ -304,8 +327,7 @@
     }
 
     .hero-bottom-caption {
-      padding-right: 100px;
-      width: 691px;
+      width: 591px;
       text-align: left;
       float: right;
       button {
@@ -339,7 +361,9 @@
         }
       }
     }
-
+    .team-hero .right {  
+      display: block;  
+    }  
     .single-team-member {
       .wrapper {
         p {
@@ -349,10 +373,10 @@
             content: '';
             position: absolute;
             left:0;
-            top: 70px;
-            border-left: 40px solid transparent;
-            border-right: 40px solid transparent;
-            border-top: 40px solid $color-gray;
+            bottom: -18px;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid #E2E2E2;
           }
         }
       }
@@ -362,20 +386,20 @@
         position: relative;
         a {
           position: absolute;
-          right: 0;
-          bottom: 10px;
+          right: 15px;
+          bottom: 20px;
         }
       }
       .member-photo {
         margin: 0;
-        margin-top: -70px;
+        margin-top: -67px;
       }
       .member-info {
         margin: 0;
         margin-top: 50px;
         width: 500px;
         h1 {
-          font-size: 48px;
+          font-size: 30px;
         }
         h1,
         p {
@@ -459,9 +483,6 @@
     .post-article h1 {
       font-size: 48px;
     }
-    aside {
-      margin-top: 10px;
-    }
     .img-l {
       float: left;
       clear: left;
@@ -481,6 +502,7 @@
       clear: right;
       width: 50%;
       text-align: left;
+      padding-left: 20px;
       h2 {
         font-size: 25px;
       }

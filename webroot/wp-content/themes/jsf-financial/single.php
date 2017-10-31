@@ -4,7 +4,7 @@
     <div class="hero-post">
         <img src="<?php bloginfo('template_directory'); ?>/img/tough-growth.jpg" alt="Hero image">
     </div>
-    <div class="main-post-content container">
+    <div class="main-post-content content-indent container">
         <div id="post-<?php the_ID(); ?>" <?php post_class('post-article'); ?>>
             <h1><?php the_title(); ?></h1>
             <div class="description">

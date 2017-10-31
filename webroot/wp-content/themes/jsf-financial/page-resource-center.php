@@ -60,12 +60,12 @@ get_header();
 			<?php get_sidebar(); ?>
         </div>
     </div>
-    <section class="resource-center-highlights">
+    <section class="resource-center-highlights container">
         <div class="title">
             <p>Resource center highlights</p>
             <a href="#">view all</a>
         </div>
-        <div class="highlighted-resources container">
+        <div class="highlighted-resources">
 			<?php $the_custom_post_query = new WP_Query( array( 'post_type' => 'resource-centers', 'order'   => 'ASC', 'posts_per_page' => 3, 'category_name' => 'highlights' ) ); ?>
 			<?php if ( $the_custom_post_query->have_posts() ) : ?>
 				<?php while ($the_custom_post_query -> have_posts()) : $the_custom_post_query -> the_post(); ?>

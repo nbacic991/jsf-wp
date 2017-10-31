@@ -122,26 +122,28 @@
             <section class="hero-bottom clearfix" style="background: url('<?php the_post_thumbnail_url(); ?>') no-repeat;
                     background-size: cover;">
                 <!-- article -->
-                <div  id="post-<?php the_ID(); ?>" <?php post_class( 'hero-bottom-caption' ); ?>>
+                <div class="container">
+                    <div  id="post-<?php the_ID(); ?>" <?php post_class( 'hero-bottom-caption' ); ?>>
 
-                    <!-- post title -->
-                    <h2>
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-                    </h2>
-                    <!-- /post title -->
+                        <!-- post title -->
+                        <h2>
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                        </h2>
+                        <!-- /post title -->
 
-                    <!-- post details -->
-                    <span class="date"><?php the_time('j F Y'); ?></span>
-                    <!-- /post details -->
+                        <!-- post details -->
+                        <span class="date"><?php the_time('j F Y'); ?></span>
+                        <!-- /post details -->
 
-                    <span class="caption"><?php echo the_content(''); ?></span>
+                        <span class="caption"><?php echo the_content(''); ?></span>
 
-                    <div class="link">
-                        <a href="<?php echo get_permalink(); ?>">Read more</a>
+                        <div class="link">
+                            <a href="<?php echo get_permalink(); ?>">Read more</a>
+                        </div>
+
+                        <!-- /article -->
                     </div>
-
-                    <!-- /article -->
-
+                </div>
             </section>
 
 			<?php

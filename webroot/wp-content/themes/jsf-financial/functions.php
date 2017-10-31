@@ -154,7 +154,8 @@ function jsf_financial_styles()
     wp_enqueue_style('css-flexslider'); // Enqueue it!
 
 	
-		wp_enqueue_style( 'jsf-financial-style', get_stylesheet_uri() );
+    wp_register_style('jsf-financial-style', get_stylesheet_uri(), array(), '2.0', 'all');
+    wp_enqueue_style('jsf-financial-style'); // Enqueue it!
 
 
 }
