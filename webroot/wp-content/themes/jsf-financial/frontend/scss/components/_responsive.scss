@@ -88,7 +88,7 @@
     margin-top: 100px;
   }
   .hero-bottom-caption {
-    padding-top: 80px;
+    margin-top: 65px;
   }
   .footer-top {
     display: flex;
@@ -98,7 +98,14 @@
       flex-basis: 48%;
     }
   }
-
+  .widget-area {
+    .widget {
+      margin-top: 80px;
+    }
+    .widget-title {
+      margin-bottom: 6px;
+    }
+  }
   .site-footer {
     .footer-menus {
       display: flex;
@@ -136,6 +143,7 @@
       width: 30%;
       float: right;
       clear: right;
+      margin-top: 30px;
     }
   }
 
