@@ -45,9 +45,17 @@
     padding-left: 15px;
     display: inline-block;
     position: absolute;
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
     img {
-      width: 200px;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       display: block;
+      height: 150px;
+      width: auto;
     }
   }
   .menu-toggle {
@@ -88,14 +96,14 @@
     }
     #menu-main-nav-top {
       a {
-        font-size: 14px;
+        font-size: 13px;
       }
     }
     .menu {
+      padding: 0;
       display: none;
       list-style-type: none;
       text-transform: uppercase;
-      padding: 0 20px;
       text-align: center;
       .sub-menu {
         a {
@@ -115,6 +123,8 @@
       }
       .client-login {
         a {
+          padding-right: 0;
+          padding-left: 3px;
           display: inline-block;
         }
         &::before {
@@ -122,6 +132,7 @@
           font-family: ElegantIcons;
           color: #929497;
           display: inline-block;
+          vertical-align: middle;
         }
       }
       a {
@@ -184,6 +195,3 @@
     }
   }
 }
-
-//Search button
-

@@ -24,7 +24,7 @@
 <div id="page" class="site">
     <header id="masthead" class="site-header">
         <div class="site-branding">
-			<?php the_custom_logo(); ?>
+            <img src="http://via.placeholder.com/500x150" alt="">
         </div><!-- .site-branding -->
 
         <div class="menu-toggle">
