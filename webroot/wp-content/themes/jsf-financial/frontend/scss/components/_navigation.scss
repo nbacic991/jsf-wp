@@ -45,17 +45,9 @@
     padding-left: 15px;
     display: inline-block;
     position: absolute;
-    width: 200px;
-    height: 50px;
-    overflow: hidden;
     img {
-      position: relative;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      width: 200px;
       display: block;
-      height: 150px;
-      width: auto;
     }
   }
   .menu-toggle {
@@ -195,3 +187,6 @@
     }
   }
 }
+
+//Search button
+

@@ -32,10 +32,7 @@
       flex-basis: 100%;
     }
   }
-  .team-founders,
-  .team-management,
-  .team-bussines,
-  .team-account {
+  .team-management {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -55,6 +52,7 @@
 
   .resource-center-highlights {
     margin-top: 50px;
+    margin-bottom: 50px;
     .title {
       display: flex;
       justify-content: space-between;
@@ -79,6 +77,10 @@
       .center-highlight {
         flex-basis: 33%;
         text-align: left;
+        p {
+          text-align: left;
+          margin: 0;
+        }
       }
     }
   }
@@ -145,7 +147,7 @@
     .site-header {
       display: flex;
       justify-content: space-around;
-      align-items: center;
+      align-items: flex-end;
       height: 100px;
       .site-branding {
         position: relative;

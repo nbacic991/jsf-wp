@@ -4,7 +4,7 @@
     <div class="hero-post">
         <img src="<?php bloginfo('template_directory'); ?>/img/tough-growth.jpg" alt="Hero image">
     </div>
-    <div class="main-post-content">
+    <div class="main-post-content container">
         <div id="post-<?php the_ID(); ?>" <?php post_class('post-article'); ?>>
             <h1><?php the_title(); ?></h1>
             <div class="description">
@@ -51,7 +51,7 @@
 			<?php get_sidebar(); ?>
         </div>
     </div>
-    <div class="resource-center-highlights">
+    <div class="resource-center-highlights container">
         <div class="title">
             <p>Resource center highlights</p>
             <a href="#">view all</a>
