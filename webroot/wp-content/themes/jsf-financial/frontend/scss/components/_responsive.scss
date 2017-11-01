@@ -198,42 +198,6 @@
           font-size: 55px;
           line-height: 65px;
         }
-        h4 {
-          text-transform: none;
-          color: $color-white;
-          font-weight: normal;
-          font-family: Merriweather;
-          line-height: 25px;
-        }
-        h5 {
-          color: $color-white;
-          margin: 20px 0;
-          .author,
-          .date,
-          .tag {
-            color: #7FADD3;
-            text-transform: uppercase;
-            font-family: font116557;
-            font-size: 14px;
-          }
-        }
-        a {
-          font-family: font116557;
-          font-size: 14px;
-          margin: 50px auto auto auto;
-          overflow: hidden;
-          background-color: #DEEAD6;
-          color: #336497;
-          border: none;
-          padding: 10px 25px;
-          display: inline-block;
-          &:after {
-            font-family: ElegantIcons;
-            content: '\45';
-            display: inline-block;
-            vertical-align: middle;
-          }
-        }
       }
     }
   }
@@ -410,9 +374,9 @@
         }
       }
     }
-    .team-hero .right {  
-      display: block;  
-    }  
+    .team-hero .right {
+      display: block;
+    }
     .single-team-member {
       .wrapper {
         p {
@@ -467,6 +431,15 @@
       .flex-image-border {
         margin: 0;
         display: block;
+      }
+      .flex-caption {
+        h4 {
+          &::before {
+            margin: 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+        }
       }
     }
   }
