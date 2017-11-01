@@ -97,9 +97,6 @@ html[xmlns] .flexslider .slides {
     background: url("../img/SVG/home-hero-bg.svg");
     background-size: cover;
 }
-.flexslider .slides li img {
-  border-radius: 50%;
-}
 .flexslider .slides img {
   height: auto;
   -moz-user-select: none;

@@ -24,8 +24,11 @@
                                     <h2><?php echo $flex_caption; ?></h2>
                                     <a href="#"><?php echo $flex_button; ?></a>
                                 </div>
-                                <div class="flex-image">
-                                    <img src="<?php echo $flex_image['url']; ?>" alt="<?php echo $flex_image['alt'] ?>" />
+                                <div class="flex-image-border">
+                                    <div class="flex-image">
+                                        <img src="http://via.placeholder.com/600x800" alt="<?php echo $flex_image['alt']
+		                                ?>" />
+                                    </div>
                                 </div>
                             </div>
                         </li>

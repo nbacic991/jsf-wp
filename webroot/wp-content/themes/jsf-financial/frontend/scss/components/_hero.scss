@@ -62,11 +62,37 @@
         }
       }
     }
-    .image,
-    .flex-image {
-      display: block;
+    .flex-image-border {
+      display: none;
       margin: auto;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      width: 505px;
+      height: 505px;
+      border: 4px solid rgba(255, 255, 255, 0.15);
+      .image,
+      .flex-image {
+        overflow: hidden;
+        position: relative;
+        width: 500px;
+        height: 500px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          min-height: 100%;
+          height: auto;
+        }
+      }
     }
+
   }
   .overlay {
     &::before {

@@ -461,6 +461,15 @@
 }
 
 @media (min-width: 1180px) {
+
+  .hero-wrapper {
+    .container {
+      .flex-image-border {
+        margin: 0;
+        display: block;
+      }
+    }
+  }
   .slides {
     li {
       .flex-caption {
@@ -472,9 +481,6 @@
           line-height: 55px;
           text-align: left;
         }
-      }
-      .flex-image {
-        display: block;
       }
     }
   }
