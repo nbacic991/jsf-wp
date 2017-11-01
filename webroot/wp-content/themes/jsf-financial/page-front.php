@@ -1,121 +1,43 @@
 <?php /* Template Name: Front Page */ ?>
 <?php get_header(); ?>
 
+<?php if( have_rows('flexslider-repeater') ): ?>
 
-<div class="heroo">
 
-    <ul>
-        <li>
-            <div class="container">
-                <div class="caption">
-                    <h4>You trust a financial adviser to handle your money. But what about a missing child ? Or a
-                        marriage at the breaking point ?
-                        In the course of their job, advisers hear all sorts of secrets from their clients.</>
-                </div>
-                <div class="image">
-                    <img src="http://via.placeholder.com/300x300" alt="some photo">
-                </div>
+    <div class="heroo">
+        <div class="flex-container">
+            <div class="flexslider">
+                <ul class="slides">
+
+				    <?php while( have_rows('flexslider-repeater') ): the_row();
+
+					    // vars
+					    $flex_image = get_sub_field('flex_image');
+					    $flex_caption = get_sub_field('flex_caption');
+					    $flex_button = get_sub_field('flex_button');
+
+					    ?>
+
+                        <li>
+                            <div class="container">
+                                <div class="flex-caption">
+                                    <h1><?php echo $flex_caption; ?></h1>
+                                    <a href="#"><?php echo $flex_button; ?></a>
+                                </div>
+                                <div class="flex-image">
+                                    <img src="<?php echo $flex_image['url']; ?>" alt="<?php echo $flex_image['alt'] ?>" />
+                                </div>
+                            </div>
+                        </li>
+
+				    <?php endwhile; ?>
+
+                </ul>
             </div>
-        </li>
-    </ul>
-
-</div>
-
-
-<div class="heroo">
-    <div class="flexslider">
-        <ul class="slides">
-            <li>
-                <div class="container">
-                    <div class="flex-caption">
-                        <h4>You trust a financial adviser to handle your money. But what about a missing child ? Or a
-                            marriage at the breaking point ?
-                            In the course of their job, advisers hear all sorts of secrets from their clients.</>
-                    </div>
-                    <div class="flex-image">
-                        <img src="http://via.placeholder.com/300x300" alt="some photo">
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="container">
-                    <div class="flex-caption">
-                        <h4>You trust a financial adviser to handle your money. But what about a missing child ? Or a
-                            marriage at the breaking point ?
-                            In the course of their job, advisers hear all sorts of secrets from their clients.</h4>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div class="flex-image">
-                        <img src="http://via.placeholder.com/300x300" alt="some photo">
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="container">
-                    <div class="flex-caption">
-                        <h1>You want me to do what</h1>
-                        <h5>by <span class="author">sam sekine</span> on <span class="date">sep 23</span> in <span
-                                    class="tag">estate planning</span></h5>
-                        <h4>You trust a financial adviser to handle your money. But what about a missing child ? Or a
-                            marriage at the breaking point ?
-                            In the course of their job, advisers hear all sorts of secrets from their clients.</h4>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div class="flex-image">
-                        <img src="http://via.placeholder.com/300x300" alt="some photo">
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="container overlay">
-                    <div class="flex-caption">
-                        <h1>You want me to do what</h1>
-                    </div>
-                    <div class="flex-image">
-                        <img src="http://via.placeholder.com/300x300" alt="some photo">
-                    </div>
-                </div>
-            </li>
-        </ul>
+        </div>
     </div>
-</div>
 
-
-<?php //if( have_rows('flexslider-repeater') ): ?>
-<!---->
-<!---->
-<!--    <div class="flex-container">-->
-<!--        <div class="flexslider">-->
-<!--            <ul class="slides">-->
-<!---->
-<!--				--><?php //while( have_rows('flexslider-repeater') ): the_row();
-//
-//					// vars
-//					$flex_image = get_sub_field('flex_image');
-//					$flex_caption = get_sub_field('flex_caption');
-//					$flex_button = get_sub_field('flex_button');
-//
-//					?>
-<!---->
-<!--                    <li>-->
-<!--                        <div class="container">-->
-<!--                            <div class="flex-caption">-->
-<!--                                <p>--><?php //echo $flex_caption; ?><!--</p>-->
-<!--                                <a href="#">--><?php //echo $flex_button; ?><!--</a>-->
-<!--                            </div>-->
-<!--                            <div class="flex-image">-->
-<!--                                <img src="--><?php //echo $flex_image['url']; ?><!--" alt="--><?php //echo $flex_image['alt'] ?><!--" />-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </li>-->
-<!---->
-<!--				--><?php //endwhile; ?>
-<!---->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-<!---->
-<?php //endif; ?>
+<?php endif; ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
