@@ -6,19 +6,23 @@
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    .flex-caption {
+      h1 {
+        &::after {
+          display: block;
+          margin: 10px auto;
+          content: '';
+          width: 100px;
+          border-bottom: 5px solid #C2D8B4;
+        }
+      }
+    }
     .caption,
     .flex-caption {
       h1 {
         color: $color-white;
         font-size: 55px;
         line-height: 65px;
-        //&::after {
-        //  display: block;
-        //  margin: 10px auto;
-        //  content: '';
-        //  width: 100px;
-        //  border-bottom: 5px solid #C2D8B4;
-        //}
       }
       h4 {
         text-transform: none;
