@@ -7,11 +7,12 @@
     <ul>
         <li>
             <div class="container">
-                <div class="flex-caption">
-                    <p>Tailored advice for life's unpredictable challenges</p>
-                    <a>Learn more</a>
+                <div class="caption">
+                    <h4>You trust a financial adviser to handle your money. But what about a missing child ? Or a
+                        marriage at the breaking point ?
+                        In the course of their job, advisers hear all sorts of secrets from their clients.</>
                 </div>
-                <div class="flex-image">
+                <div class="image">
                     <img src="http://via.placeholder.com/300x300" alt="some photo">
                 </div>
             </div>
@@ -56,7 +57,7 @@
                         <h5>by <span class="author">sam sekine</span> on <span class="date">sep 23</span> in <span
                                     class="tag">estate planning</span></h5>
                         <h4>You trust a financial adviser to handle your money. But what about a missing child ? Or a
-                        marriage at the breaking point ?
+                            marriage at the breaking point ?
                             In the course of their job, advisers hear all sorts of secrets from their clients.</h4>
                         <a href="#">Learn more</a>
                     </div>
@@ -66,11 +67,9 @@
                 </div>
             </li>
             <li>
-                <div class="container">
+                <div class="container overlay">
                     <div class="flex-caption">
                         <h1>You want me to do what</h1>
-                        <h5>by <span class="author">sam sekine</span> on <span class="date">sep 23</span> in <span
-                                    class="tag">estate planning</span></h5>
                     </div>
                     <div class="flex-image">
                         <img src="http://via.placeholder.com/300x300" alt="some photo">
