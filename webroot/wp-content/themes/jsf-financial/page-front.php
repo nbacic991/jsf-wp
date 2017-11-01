@@ -4,24 +4,24 @@
 <?php if( have_rows('flexslider-repeater') ): ?>
 
 
-    <div class="heroo">
+    <div class="hero-wrapper">
         <div class="flex-container">
             <div class="flexslider">
                 <ul class="slides">
 
-				    <?php while( have_rows('flexslider-repeater') ): the_row();
+					<?php while( have_rows('flexslider-repeater') ): the_row();
 
-					    // vars
-					    $flex_image = get_sub_field('flex_image');
-					    $flex_caption = get_sub_field('flex_caption');
-					    $flex_button = get_sub_field('flex_button');
+						// vars
+						$flex_image = get_sub_field('flex_image');
+						$flex_caption = get_sub_field('flex_caption');
+						$flex_button = get_sub_field('flex_button');
 
-					    ?>
+						?>
 
                         <li>
                             <div class="container">
                                 <div class="flex-caption">
-                                    <h1><?php echo $flex_caption; ?></h1>
+                                    <h2><?php echo $flex_caption; ?></h2>
                                     <a href="#"><?php echo $flex_button; ?></a>
                                 </div>
                                 <div class="flex-image">
@@ -30,7 +30,7 @@
                             </div>
                         </li>
 
-				    <?php endwhile; ?>
+					<?php endwhile; ?>
 
                 </ul>
             </div>

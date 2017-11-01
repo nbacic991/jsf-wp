@@ -1,4 +1,4 @@
-.heroo {
+.hero-wrapper {
   position: relative;
   .container {
     display: flex;
@@ -7,8 +7,8 @@
     align-items: center;
     text-align: center;
     .flex-caption {
-      h1 {
-        &::after {
+      h4 {
+        &::before {
           display: block;
           margin: 10px auto;
           content: '';
@@ -19,7 +19,7 @@
     }
     .caption,
     .flex-caption {
-      h1 {
+      h2 {
         color: $color-white;
         font-size: 30px;
         line-height: 65px;

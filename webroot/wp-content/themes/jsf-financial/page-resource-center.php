@@ -5,15 +5,17 @@ get_header();
 ?>
 
 <section class="resource-content">
-    <div class="hero" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/iStock_000004319094XLarge.jpg');">
-        <div class="hero-caption">
-            <h1>You want me to do what ?</h1>
-            <p class="by">By <span class="author">Sam Sekine</span>on <span class="date">SEP 23</span> in <span
-                        class="tag">Estate planning</span></p>
-            <p>You trust a financial adviser to handle your money. But what about a missing child ?
-                Or a marriage at the breaking point ? <br> In the course of their job, advisers hear all sorts of
-                secrets from their clients.</p>
-            <a href="#">Read more</a>
+    <div class="hero-wrapper">
+        <div class="hero" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/iStock_000004319094XLarge.jpg');">
+            <div class="caption">
+                <h1>You want me to do what ?</h1>
+                <h5 class="by">By <span class="author">Sam Sekine</span>on <span class="date">SEP 23</span> in <span
+                            class="tag">Estate planning</span></h5>
+                <h4>You trust a financial adviser to handle your money. But what about a missing child ?
+                    Or a marriage at the breaking point ? <br> In the course of their job, advisers hear all sorts of
+                    secrets from their clients.</h4>
+                <a href="#">Read more</a>
+            </div>
         </div>
     </div>
     <div class="main-post-content container">
